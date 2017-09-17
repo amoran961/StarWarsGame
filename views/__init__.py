@@ -8,8 +8,9 @@ pygame.init()
 gameDisplay= pygame.display.set_mode((0,0),pygame.FULLSCREEN)
 pygame.display.set_caption('Holi')
 clock= pygame.time.Clock()
-clip = VideoFileClip('D:\intro\intro.mp4')
+clip = VideoFileClip('intro.mp4')
 clip.preview()
+pygame.display.update()
 crashed= False
 
 while not crashed:
