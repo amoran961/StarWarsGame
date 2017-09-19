@@ -14,6 +14,7 @@ white = (255,255,255)
 red = (255,0,0)
 
 clip = VideoFileClip('intro.mp4')
+clip.resize(height=1080)
 clip.preview()
 
 pygame.display.update()
