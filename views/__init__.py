@@ -2,12 +2,35 @@ import imageio
 imageio.plugins.ffmpeg.download()
 from moviepy.editor import *
 from moviepy.video.fx.resize import resize
+from models.popup_menu import PopupMenu
 import pygame
+import sys
 
 pygame.init()
+SCREENWIDTH=1920
+SCREENHEIGHT=1080
 gameDisplay= pygame.display.set_mode((0,0),pygame.FULLSCREEN)
 pygame.display.set_caption('Star Wars')
 clock= pygame.time.Clock()
+basicfont = pygame.font.SysFont("comicsansms", 72)
+menu_data = (
+    'Main',
+    'Item 0',
+    'Item 1',
+    (
+        'Things',
+        'Item 0',
+        'Item 1',
+        'Item 2',
+        (
+            'More Things',
+            'Item 0',
+            'Item 1',
+        ),
+    ),
+    'Quit',
+)
+
 
 black = (0,0,0)
 white = (255,255,255)
@@ -53,8 +76,13 @@ def game_intro():
                 quit()
 
         gameDisplay.blit(bg, (0, 0))
+        PopupMenu(menu_data)
         pygame.display.update()
         clock.tick(15)
+
+
+
+
 
 
 game_intro()
