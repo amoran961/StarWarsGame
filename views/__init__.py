@@ -6,7 +6,7 @@ import pygame
 
 pygame.init()
 gameDisplay= pygame.display.set_mode((0,0),pygame.FULLSCREEN)
-pygame.display.set_caption('Holi BOLAS')
+pygame.display.set_caption('Holi BOLASAS')
 clock= pygame.time.Clock()
 clip = VideoFileClip('D:\intro\intro.mp4')
 clip.preview()
