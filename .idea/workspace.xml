@@ -2,990 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92617cc7-d85a-4946-9638-9446686a6f9d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/startgame.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/_camera.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/_pygame.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/_surface.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/bitmask.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/camera.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/fastevents.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/font.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/freetype.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/mask.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/mixer.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/pgarrinter.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/pgbufferproxy.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/pgcompat.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/pgopengl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/pygame.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/scrap.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Include/site/python3.6/Pygame/surface.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/OleFileIO_PL.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/BdfFontFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/BmpImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/BufrStubImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ContainerIO.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/CurImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/DcxImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/DdsImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/EpsImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ExifTags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/FitsStubImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/FliImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/FontFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/FpxImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/FtexImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/GbrImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/GdImageFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/GifImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/GimpGradientFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/GimpPaletteFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/GribStubImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/Hdf5StubImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/IcnsImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/IcoImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/Image.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageChops.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageCms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageColor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageDraw.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageDraw2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageEnhance.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageFilter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageFont.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageGrab.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageMath.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageMode.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageMorph.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageOps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImagePalette.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImagePath.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageQt.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageSequence.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageShow.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageStat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageTk.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageTransform.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImageWin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/ImtImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/IptcImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/Jpeg2KImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/JpegImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/JpegPresets.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/McIdasImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/MicImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/MpegImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/MpoImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/MspImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/OleFileIO.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/PSDraw.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/PaletteFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/PalmImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/PcdImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/PcfFontFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/PcxImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/PdfImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/PixarImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/PngImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/PpmImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/PsdImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/PyAccess.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/SgiImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/SpiderImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/SunImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/TarIO.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/TgaImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/TiffImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/TiffTags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/WalImageFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/WebPImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/WmfImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/XVThumbImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/XbmImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/XpmImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/_binary.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/_tkinter_finder.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/_util.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/features.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/PIL/version.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/Pillow-4.2.1.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/Pillow-4.2.1.dist-info/INSTALLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/Pillow-4.2.1.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/Pillow-4.2.1.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/Pillow-4.2.1.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/Pillow-4.2.1.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/Pillow-4.2.1.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/Pillow-4.2.1.dist-info/zip-safe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/decorator-4.0.11.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/decorator-4.0.11.dist-info/INSTALLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/decorator-4.0.11.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/decorator-4.0.11.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/decorator-4.0.11.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/decorator-4.0.11.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/decorator-4.0.11.dist-info/pbr.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/decorator-4.0.11.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/decorator.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/easy-install.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/core/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/core/fetching.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/core/findlib.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/core/format.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/core/functions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/core/request.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/core/util.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/freeze.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/_dicom.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/_freeimage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/_swf.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/_tifffile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/avbin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/dicom.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/example.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/feisem.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/ffmpeg.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/fits.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/freeimage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/freeimagemulti.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/gdal.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/npz.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/pillow.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/pillow_info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/pillowmulti.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/simpleitk.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/swf.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/plugins/tifffile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/resources/images/astronaut.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/resources/images/chelsea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/resources/images/chelsea.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/resources/images/cockatoo.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/resources/images/newtonscradle.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/resources/images/realshort.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/resources/images/stent.npz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/resources/shipped_resources_go_here" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/imageio/testing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy-0.2.3.2.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy-0.2.3.2.dist-info/INSTALLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy-0.2.3.2.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy-0.2.3.2.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy-0.2.3.2.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy-0.2.3.2.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy-0.2.3.2.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/Clip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/AudioClip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/fx/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/fx/all/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/fx/audio_fadein.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/fx/audio_fadeout.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/fx/audio_left_right.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/fx/audio_loop.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/fx/volumex.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/io/AudioFileClip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/io/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/io/ffmpeg_audiowriter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/io/preview.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/io/readers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/tools/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/audio/tools/cuts.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/config.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/config_defaults.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/decorators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/editor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/tools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/version.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/VideoClip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/compositing/CompositeVideoClip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/compositing/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/compositing/concatenate.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/compositing/on_color.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/compositing/positioning.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/compositing/transitions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/accel_decel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/all/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/blackwhite.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/blink.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/colorx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/crop.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/even_size.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/fadein.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/fadeout.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/freeze.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/freeze_region.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/gamma_corr.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/headblur.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/invert_colors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/loop.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/lum_contrast.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/make_loopable.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/margin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/mask_and.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/mask_color.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/mask_or.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/mirror_x.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/mirror_y.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/painting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/resize.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/rotate.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/scroll.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/speedx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/supersample.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/time_mirror.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/fx/time_symmetrize.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/io/ImageSequenceClip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/io/VideoFileClip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/io/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/io/bindings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/io/downloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/io/ffmpeg_reader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/io/ffmpeg_tools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/io/ffmpeg_writer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/io/gif_writers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/io/html_tools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/io/preview.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/io/sliders.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/tools/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/tools/credits.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/tools/cuts.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/tools/drawing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/tools/interpolators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/tools/segmenting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/tools/subtitles.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/moviepy/video/tools/tracking.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy-1.13.1.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy-1.13.1.dist-info/INSTALLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy-1.13.1.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy-1.13.1.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy-1.13.1.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy-1.13.1.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy-1.13.1.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/__config__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/_distributor_init.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/_globals.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/_import_tools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/add_newdocs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/compat/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/compat/_inspect.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/compat/py3k.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/compat/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/_internal.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/_methods.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/arrayprint.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/cversions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/defchararray.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/einsumfunc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/fromnumeric.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/function_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/generate_numpy_api.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/getlimits.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/__multiarray_api.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/__ufunc_api.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/_numpyconfig.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/arrayobject.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/arrayscalars.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/halffloat.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/multiarray_api.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/ndarrayobject.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/ndarraytypes.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/noprefix.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/npy_3kcompat.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/npy_common.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/npy_cpu.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/npy_endian.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/npy_interrupt.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/npy_math.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/npy_no_deprecated_api.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/npy_os.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/numpyconfig.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/old_defines.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/oldnumeric.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/ufunc_api.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/ufuncobject.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/include/numpy/utils.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/lib/npy-pkg-config/mlib.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/lib/npy-pkg-config/npymath.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/lib/npymath.lib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/machar.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/memmap.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/numeric.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/numerictypes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/numpy-atlas.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/records.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/setup_common.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/shape_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/data/astype_copy.pkl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/data/recarray_from_file.fits" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_abc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_api.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_arrayprint.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_datetime.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_defchararray.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_deprecations.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_dtype.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_einsum.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_errstate.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_extint128.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_function_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_getlimits.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_half.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_indexerrors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_indexing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_item_selection.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_longdouble.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_machar.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_mem_overlap.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_memmap.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_multiarray.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_nditer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_numeric.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_numerictypes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_print.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_records.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_regression.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_scalarinherit.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_scalarmath.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_scalarprint.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_shape_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_ufunc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_umath.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_umath_complex.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/core/tests/test_unicode.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ctypeslib.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/__config__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/__version__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/ccompiler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/autodist.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/bdist_rpm.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/build.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/build_clib.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/build_ext.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/build_py.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/build_scripts.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/build_src.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/config.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/config_compiler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/develop.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/egg_info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/install.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/install_clib.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/install_data.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/install_headers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/command/sdist.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/conv_template.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/core.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/cpuinfo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/environment.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/exec_command.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/extension.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/absoft.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/compaq.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/g95.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/gnu.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/hpux.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/ibm.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/intel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/lahey.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/mips.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/nag.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/none.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/pathf95.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/pg.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/sun.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/fcompiler/vast.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/from_template.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/intelccompiler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/lib2def.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/line_endings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/log.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/mingw/gfortran_vs2003_hack.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/mingw32ccompiler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/misc_util.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/msvc9compiler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/msvccompiler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/npy_pkg_config.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/numpy_distribution.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/pathccompiler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/site.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/system_info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/tests/test_exec_command.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/tests/test_fcompiler_gnu.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/tests/test_fcompiler_intel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/tests/test_misc_util.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/tests/test_npy_pkg_config.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/tests/test_system_info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/distutils/unixccompiler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/basics.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/broadcasting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/byteswapping.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/constants.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/creation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/glossary.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/indexing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/internals.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/misc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/structured_arrays.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/subclassing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/doc/ufuncs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/dual.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/__main__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/__version__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/auxfuncs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/capi_maps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/cb_rules.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/cfuncs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/common_rules.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/crackfortran.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/diagnose.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/f2py2e.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/f2py_testing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/f90mod_rules.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/func2subr.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/rules.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/src/fortranobject.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/src/fortranobject.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/array_from_pyobj/wrapmodule.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/assumed_shape/.f2py_f2cmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/assumed_shape/foo_free.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/assumed_shape/foo_mod.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/assumed_shape/foo_use.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/assumed_shape/precision.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/common/block.f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/kind/foo.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/mixed/foo.f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/mixed/foo_fixed.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/mixed/foo_free.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/parameter/constant_both.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/parameter/constant_compound.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/parameter/constant_integer.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/parameter/constant_non_compound.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/parameter/constant_real.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/regression/inout.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/size/foo.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/src/string/char.f90" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_array_from_pyobj.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_assumed_shape.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_callback.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_common.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_kind.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_mixed.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_parameter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_regression.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_return_character.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_return_complex.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_return_integer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_return_logical.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_return_real.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_size.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/test_string.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/tests/util.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/f2py/use_rules.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/fft/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/fft/fftpack.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/fft/helper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/fft/info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/fft/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/fft/tests/test_fftpack.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/fft/tests/test_helper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/_datasource.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/_iotools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/_version.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/arraypad.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/arraysetops.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/arrayterator.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/financial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/format.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/function_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/index_tricks.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/mixins.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/nanfunctions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/npyio.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/polynomial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/recfunctions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/scimath.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/shape_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/stride_tricks.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/data/py2-objarr.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/data/py2-objarr.npz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/data/py3-objarr.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/data/py3-objarr.npz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/data/python3.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/data/win64python2.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test__datasource.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test__iotools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test__version.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_arraypad.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_arraysetops.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_arrayterator.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_financial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_format.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_function_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_index_tricks.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_io.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_mixins.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_nanfunctions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_packbits.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_polynomial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_recfunctions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_regression.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_shape_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_stride_tricks.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_twodim_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_type_check.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_ufunclike.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/tests/test_utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/twodim_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/type_check.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/ufunclike.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/user_array.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/lib/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/linalg/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/linalg/info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/linalg/linalg.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/linalg/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/linalg/tests/test_build.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/linalg/tests/test_deprecations.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/linalg/tests/test_linalg.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/linalg/tests/test_regression.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/bench.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/core.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/extras.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/mrecords.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/tests/test_core.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/tests/test_deprecations.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/tests/test_extras.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/tests/test_mrecords.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/tests/test_old_ma.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/tests/test_regression.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/tests/test_subclassing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/testutils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/timer_comparison.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/ma/version.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/matlib.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/matrixlib/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/matrixlib/defmatrix.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/matrixlib/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/matrixlib/tests/test_defmatrix.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/matrixlib/tests/test_multiarray.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/matrixlib/tests/test_numeric.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/matrixlib/tests/test_regression.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/_polybase.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/chebyshev.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/hermite.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/hermite_e.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/laguerre.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/legendre.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/polynomial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/polyutils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/tests/test_chebyshev.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/tests/test_classes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/tests/test_hermite.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/tests/test_hermite_e.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/tests/test_laguerre.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/tests/test_legendre.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/tests/test_polynomial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/tests/test_polyutils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/polynomial/tests/test_printing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/random/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/random/info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/random/randomkit.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/random/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/random/tests/test_random.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/random/tests/test_regression.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/testing/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/testing/decorators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/testing/noseclasses.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/testing/nosetester.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/testing/print_coercion_tables.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/testing/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/testing/tests/test_decorators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/testing/tests/test_doctesting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/testing/tests/test_utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/testing/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/tests/test_ctypeslib.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/tests/test_matlib.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/tests/test_numpy_version.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/tests/test_reloading.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/tests/test_scripts.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/tests/test_warnings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/numpy/version.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/olefile/CONTRIBUTORS.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/olefile/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/olefile/README.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/olefile/README.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/olefile/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/olefile/olefile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame-1.9.3.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame-1.9.3.dist-info/INSTALLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame-1.9.3.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame-1.9.3.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame-1.9.3.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame-1.9.3.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame-1.9.3.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/LGPL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/SDL.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/SDL_image.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/SDL_mixer.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/SDL_ttf.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/_camera_opencv_highgui.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/_camera_vidcapture.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/_dummybackend.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/_numpysndarray.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/_numpysurfarray.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/camera.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/colordict.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/cursors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/docs/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/docs/__main__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/docs/logos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/docs/pygame_logo.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/docs/pygame_powered.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/docs/pygame_small.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/docs/pygame_tiny.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/docs/ref/docscomments.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/aacircle.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/aliens.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/arraydemo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/blend_fill.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/blit_blends.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/camera.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/chimp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/cursors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/alien1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/alien1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/alien1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/alien2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/alien2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/alien3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/alien3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/arraydemo.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/asprite.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/background.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/blue.mpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/bomb.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/boom.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/brick.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/car_door.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/chimp.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/city.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/danger.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/explosion1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/fist.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/house_lo.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/house_lo.ogg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/house_lo.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/liquid.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/midikeys.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/oldplayer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/player1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/punch.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/sans.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/secosmic_lo.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/shot.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/static.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/whiff.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/data/yuv_1.pgm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/eventlist.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/fastevents.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/fonty.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/freetype_misc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/glcube.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/headless_no_windows_needed.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/liquid.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/JavaCompiling.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/_MainMenu_EOArchive_English.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/classes.nib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/info.nib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/keyedobjects.nib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/macosx/aliens_app_example/English.lproj/aliens.icns" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/macosx/aliens_app_example/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/macosx/aliens_app_example/aliens.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/macosx/aliens_app_example/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/macosx/macfont.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/mask.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/midi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/moveit.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/oldalien.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/overlay.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/pixelarray.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/playmus.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/prevent_display_stretching.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/scaletest.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/scrap_clipboard.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/scroll.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/sound.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/sound_array_demos.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/stars.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/testsprite.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/examples/vgrade.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/freesansbold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/freetype.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/ftfont.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/gp2x/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/gp2x/constants.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/gp2x/locals.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/libfreetype-6.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/libgcc_s_sjlj-1.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/libjpeg-8.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/libmpg123-0.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/libogg-0.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/libpng16-16.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/libstdc++-6.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/libtiff-5.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/libvorbis-0.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/libvorbisfile-3.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/libwebp-5.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/locals.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/macosx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/midi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/pkgdata.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/portmidi.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/pygame.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/pygame_icon.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/pygame_icon.icns" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/pygame_icon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/pygame_icon.tiff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/readme.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/sndarray.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/sprite.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/surfarray.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/sysfont.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/__main__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/base_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/blit_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/bufferproxy_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/camera_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/cdrom_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/cdrom_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/color_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/compat_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/cursors_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/display_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/draw_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/event_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/fastevent_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/fixtures/fonts/A_PyGameMono-8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/fixtures/fonts/PyGameMono-18-100dpi.bdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/fixtures/fonts/PyGameMono-18-75dpi.bdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/fixtures/fonts/PyGameMono-8.bdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/fixtures/fonts/PyGameMono.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/fixtures/fonts/test_fixed.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/fixtures/fonts/test_sans.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/fixtures/fonts/u13079_PyGameMono-8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/fixtures/xbm_cursors/white_sizing.xbm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/fixtures/xbm_cursors/white_sizing_mask.xbm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/font_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/font_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/freetype_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/freetype_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/ftfont_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/ftfont_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/gfxdraw_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/image__save_gl_surface_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/image_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/image_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/imageext_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/imageext_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/joystick_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/key_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/mask_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/math_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/midi_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/midi_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/mixer_music_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/mixer_music_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/mixer_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/mixer_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/mouse_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/overlay_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/pixelarray_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/pixelcopy_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/rect_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/all_ok/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/all_ok/fake_2_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/all_ok/fake_3_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/all_ok/fake_4_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/all_ok/fake_5_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/all_ok/fake_6_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/all_ok/no_assertions__ret_code_of_1__test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/all_ok/zero_tests_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/everything/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/everything/fake_2_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/everything/incomplete_todo_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/everything/magic_tag_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/everything/sleep_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/exclude/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/exclude/fake_2_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/exclude/invisible_tag_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/exclude/magic_tag_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/failures1/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/failures1/fake_2_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/failures1/fake_3_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/failures1/fake_4_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/incomplete/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/incomplete/fake_2_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/incomplete/fake_3_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/incomplete_todo/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/incomplete_todo/fake_2_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/incomplete_todo/fake_3_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/infinite_loop/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/infinite_loop/fake_1_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/infinite_loop/fake_2_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/print_stderr/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/print_stderr/fake_2_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/print_stderr/fake_3_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/print_stderr/fake_4_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/print_stdout/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/print_stdout/fake_2_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/print_stdout/fake_3_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/print_stdout/fake_4_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/run_tests__test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/timeout/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/timeout/fake_2_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/run_tests__tests/timeout/sleep_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/rwobject_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/scrap_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/scrap_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/sndarray_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/sndarray_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/sprite_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/surface_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/surfarray_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/surfarray_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/surflock_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/sysfont_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/test_test_.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/test_utils/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/test_utils/arrinter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/test_utils/async_sub.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/test_utils/buftools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/test_utils/endian.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/test_utils/png.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/test_utils/run_tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/test_utils/test_machinery.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/test_utils/test_runner.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/threads_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/time_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/tests/transform_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/threads/Py25Queue.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/threads/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/version.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/pygame/zlib1.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/setuptools.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/download_media.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_ImageSequenceClip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_PR.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_TextClip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_VideoFileClip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_Videos.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_compositing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_examples.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_ffmpeg_reader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_fx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_helper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_issues.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_misc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/test_tools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tests/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm-4.11.2.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm-4.11.2.dist-info/INSTALLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm-4.11.2.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm-4.11.2.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm-4.11.2.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm-4.11.2.dist-info/entry_points.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm-4.11.2.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm-4.11.2.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm/__main__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm/_main.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm/_tqdm.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm/_tqdm_gui.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm/_tqdm_notebook.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm/_tqdm_pandas.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm/_utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/site-packages/tqdm/_version.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Lib/tcl8.6/init.tcl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/Activate.ps1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/activate" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/activate.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/createfontdatachunk.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/deactivate.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/easy_install-3.6-script.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/easy_install-3.6.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/easy_install-script.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/easy_install.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/enhancer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/explode.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/f2py.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/gifmaker.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/painter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/pilconvert.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/pildriver.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/pilfile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/pilfont.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/pilprint.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/pip-script.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/pip.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/pip3-script.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/pip3.6-script.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/pip3.6.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/pip3.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/player.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/python.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/python3.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/python36.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/pythonw.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/sqlite3.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/tcl86t.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/thresholder.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/tk86t.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/tqdm.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/vcruntime140.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/Scripts/viewer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/pip-selfcheck.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/starwarsenv/pyvenv.cfg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/StarWarsGame.iml" afterPath="$PROJECT_DIR$/.idea/StarWarsGame.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/__init__.py" afterPath="$PROJECT_DIR$/views/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Service.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1000,10 +17,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="442">
               <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -1012,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="startgame.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/startgame.py">
+      <file leaf-file-name="Service.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1052,6 +69,7 @@
         <option value="$PROJECT_DIR$/game/init_game.py" />
         <option value="$PROJECT_DIR$/game/startgame.py" />
         <option value="$PROJECT_DIR$/views/__init__.py" />
+        <option value="$PROJECT_DIR$/Service.py" />
       </list>
     </option>
   </component>
@@ -1101,6 +119,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1111,19 +131,12 @@
             <path>
               <item name="StarWarsGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="StarWarsGame" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StarWarsGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StarWarsGame" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1208,6 +221,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19583334" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1250,6 +264,24 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/startgame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1446,11 +478,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="442">
           <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
