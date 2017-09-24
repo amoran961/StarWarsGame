@@ -1,66 +1,76 @@
-import imageio
-imageio.plugins.ffmpeg.download()
-from moviepy.editor import *
-from win32api import GetSystemMetrics
 from tkinter import *
-import os
-import pygame
-
-pygame.init()
-SCREENWIDTH=GetSystemMetrics(0)
-SCREENHEIGHT= GetSystemMetrics(1)
-gameDisplay= pygame.display.set_mode((0,0),pygame.FULLSCREEN)
-pygame.display.set_caption('Star Wars')
-clock= pygame.time.Clock()
-basicfont = pygame.font.SysFont("comicsansms", 72)
+import game.startgame
+bgclr = "#282828"
+fgclr = "#cecece"
+clr = '#004a95'
 
 
+def login(user_Entry, password_Entry, w, warn):
+    users = [("dilip", "python")]
+    if (user_Entry.get(), password_Entry.get()) in users:
+        w.destroy()
+        game.startgame.start_game()
+    else:
+        warn.config(text="Invalid username or Password", fg="red")
 
-clip = VideoFileClip('intro.mp4')
-newclip = clip.resize((SCREENWIDTH,SCREENHEIGHT))
-newclip.preview()
+w = Tk()
+w.title("login")
+w.geometry("500x300")
+w.config(bg=bgclr)
+w.resizable()
 
-pygame.display.update()
+user = Label(w,
+             text="User",
+             font=("blod", 15),
+             bg=bgclr,
+             fg=fgclr)
+user.place(x=20, y=40)
 
+user_Entry = Entry(w, bg=bgclr,
+                   fg="white",
+                   relief=GROOVE,
+                   highlightcolor="white",
+                   highlightthickness=2,
+                   highlightbackground=clr,
+                   width=40,
+                   font=10,
+                   bd=5)
+user_Entry.place(x=20, y=80)
 
-def game_loop():
-    crashed= False
-    while not crashed:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                crashed =True
-            print(event)
-        pygame.display.update()
-        clock.tick(60)
+password = Label(w,
+                 text="Password",
+                 font=("blod", 15),
+                 bg=bgclr,
+                 fg=fgclr)
+password.place(x=20, y=120)
 
-def text_objects(text, font):
-    textSurface = font.render(text, True, black)
-    return textSurface, textSurface.get_rect()
+password_Entry = Entry(w, bg=bgclr,
+                       fg="white",
+                       relief=GROOVE,
+                       highlightcolor="white",
+                       highlightthickness=2,
+                       highlightbackground=clr,
+                       width=40,
+                       font=10,
+                       show="*",
+                       bd=5)
+password_Entry.place(x=20, y=160)
 
-def game_intro():
-    intro = True
+warn = Label(w,
+             font=("blod", 10),
+             bg=bgclr)
 
-    bg = pygame.image.load("menu.png")
-    bg = pygame.transform.scale(bg,(SCREENWIDTH,SCREENHEIGHT))
-    file = "menu.mp3"
-    pygame.mixer.init()
-    pygame.mixer.music.load(file)
-    pygame.mixer.music.play()
+warn.place(x=80, y=200)
 
-    while intro and pygame.mixer.music.get_busy():
-        for event in pygame.event.get():
-            print(event)
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                quit()
-
-        gameDisplay.blit(bg, (0, 0))
-
-        pygame.display.update()
-        clock.tick(15)
-
-
-game_intro()
-game_loop()
-pygame.quit()
-quit()
+button = Button(w,
+                text="Login",
+                bg=clr,
+                fg="white",
+                relief=GROOVE,
+                highlightcolor=clr,
+                highlightthickness=4,
+                width=40,
+                font=10,
+                command=lambda: login(user_Entry, password_Entry, w, warn))
+button.place(x=20, y=240)
+w.mainloop()
