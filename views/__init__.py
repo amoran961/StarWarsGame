@@ -1,44 +1,24 @@
 import imageio
 imageio.plugins.ffmpeg.download()
 from moviepy.editor import *
-from moviepy.video.fx.resize import resize
-from models.popup_menu import PopupMenu
+from win32api import GetSystemMetrics
+from tkinter import *
+import os
 import pygame
-import sys
 
 pygame.init()
-SCREENWIDTH=1920
-SCREENHEIGHT=1080
+SCREENWIDTH=GetSystemMetrics(0)
+SCREENHEIGHT= GetSystemMetrics(1)
 gameDisplay= pygame.display.set_mode((0,0),pygame.FULLSCREEN)
 pygame.display.set_caption('Star Wars')
 clock= pygame.time.Clock()
 basicfont = pygame.font.SysFont("comicsansms", 72)
-menu_data = (
-    'Main',
-    'Item 0',
-    'Item 1',
-    (
-        'Things',
-        'Item 0',
-        'Item 1',
-        'Item 2',
-        (
-            'More Things',
-            'Item 0',
-            'Item 1',
-        ),
-    ),
-    'Quit',
-)
 
 
-black = (0,0,0)
-white = (255,255,255)
-red = (255,0,0)
 
 clip = VideoFileClip('intro.mp4')
-clip.resize(height=1080)
-clip.preview()
+newclip = clip.resize((SCREENWIDTH,SCREENHEIGHT))
+newclip.preview()
 
 pygame.display.update()
 
@@ -47,11 +27,9 @@ def game_loop():
     crashed= False
     while not crashed:
         for event in pygame.event.get():
-
             if event.type == pygame.QUIT:
                 crashed =True
             print(event)
-
         pygame.display.update()
         clock.tick(60)
 
@@ -63,6 +41,7 @@ def game_intro():
     intro = True
 
     bg = pygame.image.load("menu.png")
+    bg = pygame.transform.scale(bg,(SCREENWIDTH,SCREENHEIGHT))
     file = "menu.mp3"
     pygame.mixer.init()
     pygame.mixer.music.load(file)
@@ -76,13 +55,9 @@ def game_intro():
                 quit()
 
         gameDisplay.blit(bg, (0, 0))
-        PopupMenu(menu_data)
+
         pygame.display.update()
         clock.tick(15)
-
-
-
-
 
 
 game_intro()
