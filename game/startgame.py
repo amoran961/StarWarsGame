@@ -20,7 +20,7 @@ def start_game():
     pygame.display.update()
 
 
-    game_intro(gameDisplay,clock)
+    game_menu(gameDisplay,clock)
     game_loop(clock)
     pygame.quit()
     quit()
@@ -38,15 +38,33 @@ def game_loop(clock):
         clock.tick(60)
 
 
-def game_intro(gameDisplay,clock):
+def game_menu(gameDisplay,clock):
     intro = True
-
+    font_type = None
+    font_size=50
+    font_color = (255, 255, 255)
+    arrayit=[]
     bg = pygame.image.load("menu.png")
     bg = pygame.transform.scale(bg,(SCREENWIDTH,SCREENHEIGHT))
     file = "menu.mp3"
     pygame.mixer.init()
     pygame.mixer.music.load(file)
     pygame.mixer.music.play()
+    font = pygame.font.SysFont(font_type, font_size)
+
+    items=('Start game')
+    posx= (SCREENWIDTH/20 )
+    for index, item in enumerate(items):
+        label = font.render(item, 1, font_color)
+
+        width = label.get_rect().width
+        height = label.get_rect().height
+        # t_h: total width of text block
+
+        posx =  posx + 30
+        posy = (SCREENHEIGHT / 2) - (height / 2)
+
+        arrayit.append([item, label, (width, height), (posx, posy)])
 
     while intro and pygame.mixer.music.get_busy():
         for event in pygame.event.get():
@@ -56,6 +74,11 @@ def game_intro(gameDisplay,clock):
                 quit()
 
         gameDisplay.blit(bg, (0, 0))
+        for name,label,(width, height),(posx, posy) in arrayit:
+            gameDisplay.blit(label, (posx, posy))
+
+        pygame.display.flip()
+
 
         pygame.display.update()
         clock.tick(15)
