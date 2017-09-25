@@ -17,8 +17,18 @@ def login(user_Entry, password_Entry, w, warn):
         warn.config(text="Invalid username or Password", fg="red")
 
 w = Tk()
-w.title("login")
-w.geometry("500x300")
+
+ws = w.winfo_screenwidth() # width of the screen
+hs = w.winfo_screenheight() # height of the screen
+wi = 450 # width for the Tk root0
+hi = 350 # height for the Tk root
+
+x = (ws/2) - (wi/2)
+y = (hs/2) - (hi/2)
+
+w.title("Star Wars")
+w.geometry('%dx%d+%d+%d' % (wi, hi, x, y))
+
 w.config(bg=bgclr)
 w.resizable()
 

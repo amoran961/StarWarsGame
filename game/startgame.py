@@ -3,10 +3,9 @@ imageio.plugins.ffmpeg.download()
 from moviepy.editor import *
 from win32api import GetSystemMetrics
 import pygame
-
+import game.menu
 SCREENWIDTH = GetSystemMetrics(0)
 SCREENHEIGHT = GetSystemMetrics(1)
-
 
 def start_game():
 
@@ -21,63 +20,55 @@ def start_game():
 
 
     game_menu(gameDisplay,clock)
-    game_loop(clock)
     pygame.quit()
     quit()
-
-
-
-def game_loop(clock):
-    crashed= False
-    while not crashed:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                crashed =True
-            print(event)
-        pygame.display.update()
-        clock.tick(60)
-
 
 def game_menu(gameDisplay,clock):
     intro = True
     font_type = None
     font_size=50
     font_color = (255, 255, 255)
-    arrayit=[]
-    bg = pygame.image.load("menu.png")
-    bg = pygame.transform.scale(bg,(SCREENWIDTH,SCREENHEIGHT))
+    font = pygame.font.SysFont(font_type, font_size)
+    menu_font = pygame.font.Font(None, 40)
     file = "menu.mp3"
     pygame.mixer.init()
     pygame.mixer.music.load(file)
     pygame.mixer.music.play()
-    font = pygame.font.SysFont(font_type, font_size)
+    bg = pygame.image.load("menu.png")
+    bg = pygame.transform.scale(bg,(SCREENWIDTH,SCREENHEIGHT))
+    op = game.menu.Option("New game", (SCREENWIDTH/20, SCREENHEIGHT/15),gameDisplay,menu_font)
+    options = [op]
+    state="MENU"
+    while intro and  pygame.mixer.music.get_busy:
 
-    items=('Start game')
-    posx= (SCREENWIDTH/20 )
-    for index, item in enumerate(items):
-        label = font.render(item, 1, font_color)
+        if (state=="MENU"):
+            pygame.mixer.music.unpause()
+            gameDisplay.blit(bg, (0, 0))
 
-        width = label.get_rect().width
-        height = label.get_rect().height
-        # t_h: total width of text block
+            for option in options:
+                if option.rect.collidepoint(pygame.mouse.get_pos()):
+                    option.hovered = True
+                else:
+                    option.hovered = False
+                option.draw(gameDisplay,menu_font)
 
-        posx =  posx + 30
-        posy = (SCREENHEIGHT / 2) - (height / 2)
-
-        arrayit.append([item, label, (width, height), (posx, posy)])
-
-    while intro and pygame.mixer.music.get_busy():
         for event in pygame.event.get():
             print(event)
+            mpos= pygame.mouse.get_pos()
             if event.type == pygame.QUIT:
                 pygame.quit()
                 quit()
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                for option in options:
+                    if option.rect.collidepoint(pygame.mouse.get_pos()):
+                        state="SELECT_CHAR"
 
-        gameDisplay.blit(bg, (0, 0))
-        for name,label,(width, height),(posx, posy) in arrayit:
-            gameDisplay.blit(label, (posx, posy))
-
-        pygame.display.flip()
+        if (state == "SELECT_CHAR"):
+            bg = pygame.image.load("select.png")
+            bg = pygame.transform.scale(bg, (SCREENWIDTH, SCREENHEIGHT))
+            gameDisplay.blit(bg, (0, 0))
+            pygame.display.update()
+            clock.tick(15)
 
 
         pygame.display.update()
