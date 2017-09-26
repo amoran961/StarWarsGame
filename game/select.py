@@ -1,10 +1,21 @@
-class Option:
-    hovered = False
+import game.constants as c
+class CharacterImg:
 
-    def __init__(self, text, pos,screen,):
-        self.text = text
-        self.pos = pos
-        self.set_rect()
-        self.set_draw(screen)
+    def __init__(self, name, pos,img,pygame,screen):
+        self.name=name
+        self.pos=pos
+        self.img=img
+        self.screen=screen
+        self.pygame=pygame
+
+    def load_img(self):
+        myimage = self.pygame.image.load(self.img)
+        screnw= c.SCREENWIDTH/1200
+        wid= round(myimage.get_width()/screnw)
+        hei=round(myimage.get_height()/screnw)
+        myimage = self.pygame.transform.scale(myimage, (wid,hei))
+        self.screen.blit(myimage, self.pos)
+        self.pygame.display.flip()
+
 
 

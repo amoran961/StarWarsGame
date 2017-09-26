@@ -4,6 +4,7 @@ from moviepy.editor import *
 from win32api import GetSystemMetrics
 import pygame
 import game.menu
+import game.select
 SCREENWIDTH = GetSystemMetrics(0)
 SCREENHEIGHT = GetSystemMetrics(1)
 
@@ -15,10 +16,8 @@ def start_game():
     clock= pygame.time.Clock()
     clip = VideoFileClip('intro.mp4')
     newclip = clip.resize((SCREENWIDTH,SCREENHEIGHT))
-    newclip.preview(fps=7)
+    newclip.preview(fps=15)
     pygame.display.update()
-
-
     game_menu(gameDisplay,clock)
     pygame.quit()
     quit()
@@ -67,6 +66,8 @@ def game_menu(gameDisplay,clock):
             bg = pygame.image.load("select.png")
             bg = pygame.transform.scale(bg, (SCREENWIDTH, SCREENHEIGHT))
             gameDisplay.blit(bg, (0, 0))
+            op1= game.select.CharacterImg("Luke",(SCREENWIDTH/10,SCREENHEIGHT/20),"luke_select.png",pygame,gameDisplay)
+            op1.load_img()
             pygame.display.update()
             clock.tick(15)
 
