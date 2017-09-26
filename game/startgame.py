@@ -15,7 +15,7 @@ def start_game():
     clock= pygame.time.Clock()
     clip = VideoFileClip('intro.mp4')
     newclip = clip.resize((SCREENWIDTH,SCREENHEIGHT))
-    newclip.preview()
+    newclip.preview(fps=7)
     pygame.display.update()
 
 
