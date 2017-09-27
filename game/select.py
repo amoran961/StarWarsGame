@@ -10,12 +10,12 @@ class CharacterImg:
 
     def load_img(self):
         myimage = self.pygame.image.load(self.img)
-        screnw= c.SCREENWIDTH/1200
+        screnw= c.SCREENWIDTH/700
         wid= round(myimage.get_width()/screnw)
         hei=round(myimage.get_height()/screnw)
         myimage = self.pygame.transform.scale(myimage, (wid,hei))
         self.screen.blit(myimage, self.pos)
-        self.pygame.display.flip()
+
 
 
 
