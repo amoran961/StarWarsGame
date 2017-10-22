@@ -16,9 +16,9 @@ class Option:
 
     def get_color(self):
         if self.hovered:
-            return (255, 255, 255)
+            return (255, 250, 140)
         else:
-            return (100, 100, 100)
+            return (255, 255, 255)
 
     def set_rect(self,menu_font):
         self.set_rend(menu_font)

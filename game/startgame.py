@@ -38,6 +38,8 @@ def game_menu(gameDisplay, clock):
     pygame.mixer.music.play()
 
     state = "MENU"
+    substate=""
+    charname=""
     while intro and pygame.mixer.music.get_busy:
 
         if (state == "MENU"):
@@ -49,38 +51,49 @@ def game_menu(gameDisplay, clock):
             options = [op, op2]
             gameDisplay.blit(bg, (0, 0))
 
-            for option in options:
-                if option.rect.collidepoint(pygame.mouse.get_pos()):
-                    option.hovered = True
-                else:
-                    option.hovered = False
-                option.draw(gameDisplay, menu_font)
+
         if (state == "SELECT_CHAR"):
             bg = pygame.image.load("select.png")
             bg = pygame.transform.scale(bg, (SCREENWIDTH, SCREENHEIGHT))
             gameDisplay.blit(bg, (0, 0))
 
-            opback = game.menu.Option("Back", (SCREENWIDTH / 20, SCREENHEIGHT / 1.2), gameDisplay, menu_font)
+
 
             op1 = game.select.CharacterImg("Luke", ((SCREENWIDTH / 10) + 600, (SCREENHEIGHT / 20)), "luke_select.png",
-                                           pygame, gameDisplay)
+                                           pygame, gameDisplay,"luke_story.png")
             op2 = game.select.CharacterImg("Vader", ((SCREENWIDTH / 10) + 300, (SCREENHEIGHT / 20)), "vader_select.png",
-                                           pygame, gameDisplay)
+                                           pygame, gameDisplay,"luke_story.png")
             op3 = game.select.CharacterImg("Solo", ((SCREENWIDTH / 10), (SCREENHEIGHT / 20)), "solo_select.png", pygame,
-                                           gameDisplay)
+                                           gameDisplay,"luke_story.png")
             op4 = game.select.CharacterImg("Sidious", ((SCREENWIDTH / 10) + 900, (SCREENHEIGHT / 20)),
-                                           "sidious_select.png", pygame, gameDisplay)
+                                           "sidious_select.png", pygame, gameDisplay,"luke_story.png")
+            opback = game.menu.Option("Back", (SCREENWIDTH / 20, SCREENHEIGHT / 1.2), gameDisplay, menu_font)
             op2.load_img()
             op3.load_img()
             op1.load_img()
             op4.load_img()
             options=[opback]
+            chars=[op1,op2,op3,op4]
+
+        for option in options:
+            if option.rect.collidepoint(pygame.mouse.get_pos()):
+                option.hovered = True
+            else:
+                option.hovered = False
+            option.draw(gameDisplay, menu_font)
+
         for event in pygame.event.get():
             print(event)
             if event.type == pygame.QUIT:
                 pygame.quit()
                 quit()
             if event.type == pygame.MOUSEBUTTONDOWN:
+
+                if state=="SELECT_CHAR":
+                    for char in chars:
+                        if char.image_rect.collidepoint(pygame.mouse.get_pos()):
+                            char.show_story()
+
                 for option in options:
                     if option.rect.collidepoint(pygame.mouse.get_pos()) and option.text=="New game":
                         state = "SELECT_CHAR"
@@ -89,11 +102,6 @@ def game_menu(gameDisplay, clock):
                         quit()
                     elif option.rect.collidepoint(pygame.mouse.get_pos()) and option.text == "Back":
                         state="MENU"
-
-
-
-
-
 
             pygame.display.update()
 

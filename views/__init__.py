@@ -8,9 +8,10 @@ clr = '#004a95'
 
 
 def login(user_Entry, password_Entry, w, warn):
-    log= services.Service.ServiceLogin()
+
+    log= services.Service.ServiceLogin().login(user_Entry.get(),password_Entry.get())
     users = [("dilip", "python")]
-    if (user_Entry.get(), password_Entry.get()) in users:
+    if (log==True):
         w.destroy()
         game.startgame.start_game()
     else:
