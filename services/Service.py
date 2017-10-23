@@ -1,6 +1,6 @@
 import requests
 import json
-
+import game.gameconf as gc
 
 class ServiceLogin:
     URL = "https://starwarsconsola.herokuapp.com/StarWarsConsole/login_juego/"
@@ -9,16 +9,22 @@ class ServiceLogin:
             pass
 
     def login(self,user, password):
-
         payload= {'id':user,'password':password}
         r = requests.post(self.URL,json=payload)
         res = r.json()
         respuesta=res[0]
-        respuesta=respuesta['result']
+        result=respuesta['result']
+
         if (respuesta=="true"):
-            estado=True
+            mision = respuesta['mision']
+            bando = respuesta['bando']
+            dificultad = respuesta['dificultad']
+            config=gc.GameConfig(result)
+            config.mision=mision
+            config.bando=bando
+            config.dificultad=dificultad
         else:
-            estado=False
-        return estado
+            config = gc.GameConfig(result)
+        return config
 
 

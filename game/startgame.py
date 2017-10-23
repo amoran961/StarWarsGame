@@ -6,9 +6,8 @@ from win32api import GetSystemMetrics
 import pygame
 import game.menu
 import game.select
+import game.constants as c
 
-SCREENWIDTH = GetSystemMetrics(0)
-SCREENHEIGHT = GetSystemMetrics(1)
 
 
 def start_game():
@@ -17,7 +16,7 @@ def start_game():
     pygame.display.set_caption('Star Wars')
     clock = pygame.time.Clock()
     clip = VideoFileClip('intro.mp4')
-    newclip = clip.resize((SCREENWIDTH, SCREENHEIGHT))
+    newclip = clip.resize((c.SCREENWIDTH, c.SCREENHEIGHT))
     newclip.preview(fps=6)
     pygame.display.update()
     game_menu(gameDisplay, clock)
@@ -45,35 +44,39 @@ def game_menu(gameDisplay, clock):
         if (state == "MENU"):
             pygame.mixer.music.unpause()
             bg = pygame.image.load("menu.png")
-            bg = pygame.transform.scale(bg, (SCREENWIDTH, SCREENHEIGHT))
-            op = game.menu.Option("New game", (SCREENWIDTH / 20, SCREENHEIGHT / 15), gameDisplay, menu_font)
-            op2 = game.menu.Option("Quit", (SCREENWIDTH / 20, SCREENHEIGHT / 1.2), gameDisplay, menu_font)
+            bg = pygame.transform.scale(bg, (c.SCREENWIDTH, c.SCREENHEIGHT))
+            op = game.menu.Option("New game", (c.SCREENWIDTH / 20, c.SCREENHEIGHT / 15), gameDisplay, menu_font)
+            op2 = game.menu.Option("Quit", (c.SCREENWIDTH / 20, c.SCREENHEIGHT / 1.2), gameDisplay, menu_font)
             options = [op, op2]
             gameDisplay.blit(bg, (0, 0))
 
 
         if (state == "SELECT_CHAR"):
             bg = pygame.image.load("select.png")
-            bg = pygame.transform.scale(bg, (SCREENWIDTH, SCREENHEIGHT))
+            bg = pygame.transform.scale(bg, (c.SCREENWIDTH, c.SCREENHEIGHT))
             gameDisplay.blit(bg, (0, 0))
 
 
 
-            op1 = game.select.CharacterImg("Luke", ((SCREENWIDTH / 10) + 600, (SCREENHEIGHT / 20)), "luke_select.png",
+            op1 = game.select.CharacterImg("Luke", ((c.SCREENWIDTH / 10) + 600, (c.SCREENHEIGHT / 20)), "luke_select.png",
                                            pygame, gameDisplay,"luke_story.png")
-            op2 = game.select.CharacterImg("Vader", ((SCREENWIDTH / 10) + 300, (SCREENHEIGHT / 20)), "vader_select.png",
+            op2 = game.select.CharacterImg("Vader", ((c.SCREENWIDTH / 10) + 300, (c.SCREENHEIGHT / 20)), "vader_select.png",
                                            pygame, gameDisplay,"luke_story.png")
-            op3 = game.select.CharacterImg("Solo", ((SCREENWIDTH / 10), (SCREENHEIGHT / 20)), "solo_select.png", pygame,
+            op3 = game.select.CharacterImg("Solo", ((c.SCREENWIDTH / 10), (c.SCREENHEIGHT / 20)), "solo_select.png", pygame,
                                            gameDisplay,"luke_story.png")
-            op4 = game.select.CharacterImg("Sidious", ((SCREENWIDTH / 10) + 900, (SCREENHEIGHT / 20)),
+            op4 = game.select.CharacterImg("Sidious", ((c.SCREENWIDTH / 10) + 900, (c.SCREENHEIGHT / 20)),
                                            "sidious_select.png", pygame, gameDisplay,"luke_story.png")
-            opback = game.menu.Option("Back", (SCREENWIDTH / 20, SCREENHEIGHT / 1.2), gameDisplay, menu_font)
+            opback = game.menu.Option("Back", (c.SCREENWIDTH / 20, c.SCREENHEIGHT / 1.2), gameDisplay, menu_font)
             op2.load_img()
             op3.load_img()
             op1.load_img()
             op4.load_img()
             options=[opback]
             chars=[op1,op2,op3,op4]
+
+            for char in chars:
+                if char.image_rect.collidepoint(pygame.mouse.get_pos()):
+                    char.show_story()
 
         for option in options:
             if option.rect.collidepoint(pygame.mouse.get_pos()):
@@ -90,9 +93,7 @@ def game_menu(gameDisplay, clock):
             if event.type == pygame.MOUSEBUTTONDOWN:
 
                 if state=="SELECT_CHAR":
-                    for char in chars:
-                        if char.image_rect.collidepoint(pygame.mouse.get_pos()):
-                            char.show_story()
+                    pass
 
                 for option in options:
                     if option.rect.collidepoint(pygame.mouse.get_pos()) and option.text=="New game":

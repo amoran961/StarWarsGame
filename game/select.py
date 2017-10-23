@@ -19,10 +19,12 @@ class CharacterImg:
         self.screen.blit(self.myimage, self.pos)
 
     def show_story(self):
-        screnw = c.SCREENWIDTH / 700
-        wid = round(self.mystory.get_width() / screnw)
-        hei = round(self.mystory.get_height() / screnw)
+        storyw = c.SCREENWIDTH / 700
+        storyh = c.SCREENWIDTH / 700
+        posstory= (c.SCREENWIDTH/4,c.SCREENHEIGHT/2)
+        wid = round(self.mystory.get_width() / storyw)
+        hei = round(self.mystory.get_height() / storyh)
         mystory = self.pygame.transform.scale(self.mystory, (wid, hei))
-        self.screen.blit(mystory, self.pos)
+        self.screen.blit(mystory, posstory)
 
 

@@ -11,7 +11,7 @@ def login(user_Entry, password_Entry, w, warn):
 
     log= services.Service.ServiceLogin().login(user_Entry.get(),password_Entry.get())
     users = [("dilip", "python")]
-    if (log==True):
+    if (log.estadologin==True):
         w.destroy()
         game.startgame.start_game()
     else:
