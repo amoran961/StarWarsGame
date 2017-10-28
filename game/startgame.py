@@ -1,5 +1,4 @@
 import imageio
-
 imageio.plugins.ffmpeg.download()
 from moviepy.editor import *
 from win32api import GetSystemMetrics
@@ -8,73 +7,57 @@ import game.menu
 import game.select
 import game.constants as c
 
-
-
 def start_game():
     pygame.init()
-    gameDisplay = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+    c.GAME_DISPLAY=pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+
     pygame.display.set_caption('Star Wars')
     clock = pygame.time.Clock()
     clip = VideoFileClip('intro.mp4')
     newclip = clip.resize((c.SCREENWIDTH, c.SCREENHEIGHT))
     newclip.preview(fps=6)
     pygame.display.update()
-    game_menu(gameDisplay, clock)
+    game_menu(clock)
     pygame.quit()
     quit()
 
 
-def game_menu(gameDisplay, clock):
+def game_menu(clock):
     intro = True
-    font_type = None
-    font_size = 50
-    font_color = (255, 255, 255)
-    font = pygame.font.SysFont(font_type, font_size)
+
     menu_font = pygame.font.Font(None, 40)
-    file = "menu.mp3"
+    file = c.MENU_AUD
     pygame.mixer.init()
     pygame.mixer.music.load(file)
     pygame.mixer.music.play()
 
     state = "MENU"
-    substate=""
-    charname=""
+
     while intro and pygame.mixer.music.get_busy:
 
         if (state == "MENU"):
             pygame.mixer.music.unpause()
-            bg = pygame.image.load("menu.png")
+            bg = pygame.image.load(c.MENU_IMG)
             bg = pygame.transform.scale(bg, (c.SCREENWIDTH, c.SCREENHEIGHT))
-            op = game.menu.Option("New game", (c.SCREENWIDTH / 20, c.SCREENHEIGHT / 15), gameDisplay, menu_font)
-            op2 = game.menu.Option("Quit", (c.SCREENWIDTH / 20, c.SCREENHEIGHT / 1.2), gameDisplay, menu_font)
+            op = game.menu.Option("New game", (c.SCREENWIDTH / 20, c.SCREENHEIGHT / 15), c.GAME_DISPLAY, menu_font)
+            op2 = game.menu.Option("Quit", (c.SCREENWIDTH / 20, c.SCREENHEIGHT / 1.2), c.GAME_DISPLAY, menu_font)
             options = [op, op2]
-            gameDisplay.blit(bg, (0, 0))
+            c.GAME_DISPLAY.blit(bg, (0, 0))
 
 
         if (state == "SELECT_CHAR"):
-            bg = pygame.image.load("select.png")
+            bg = pygame.image.load(c.CHAR_IMG)
             bg = pygame.transform.scale(bg, (c.SCREENWIDTH, c.SCREENHEIGHT))
-            gameDisplay.blit(bg, (0, 0))
+            c.GAME_DISPLAY.blit(bg, (0, 0))
 
+            opback = game.menu.Option("Back", (c.SCREENWIDTH / 20, c.SCREENHEIGHT / 1.2), c.GAME_DISPLAY, menu_font)
 
+            for ch in c.CHARS:
+                ch.load_img()
 
-            op1 = game.select.CharacterImg("Luke", ((c.SCREENWIDTH / 10) + 600, (c.SCREENHEIGHT / 20)), "luke_select.png",
-                                           pygame, gameDisplay,"luke_story.png")
-            op2 = game.select.CharacterImg("Vader", ((c.SCREENWIDTH / 10) + 300, (c.SCREENHEIGHT / 20)), "vader_select.png",
-                                           pygame, gameDisplay,"luke_story.png")
-            op3 = game.select.CharacterImg("Solo", ((c.SCREENWIDTH / 10), (c.SCREENHEIGHT / 20)), "solo_select.png", pygame,
-                                           gameDisplay,"luke_story.png")
-            op4 = game.select.CharacterImg("Sidious", ((c.SCREENWIDTH / 10) + 900, (c.SCREENHEIGHT / 20)),
-                                           "sidious_select.png", pygame, gameDisplay,"luke_story.png")
-            opback = game.menu.Option("Back", (c.SCREENWIDTH / 20, c.SCREENHEIGHT / 1.2), gameDisplay, menu_font)
-            op2.load_img()
-            op3.load_img()
-            op1.load_img()
-            op4.load_img()
             options=[opback]
-            chars=[op1,op2,op3,op4]
 
-            for char in chars:
+            for char in c.CHARS:
                 if char.image_rect.collidepoint(pygame.mouse.get_pos()):
                     char.show_story()
 
@@ -83,7 +66,7 @@ def game_menu(gameDisplay, clock):
                 option.hovered = True
             else:
                 option.hovered = False
-            option.draw(gameDisplay, menu_font)
+            option.draw(c.GAME_DISPLAY, menu_font)
 
         for event in pygame.event.get():
             print(event)

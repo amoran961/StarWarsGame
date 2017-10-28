@@ -10,12 +10,19 @@ class ServiceLogin:
 
     def login(self,user, password):
         payload= {'id':user,'password':password}
-        r = requests.post(self.URL,json=payload)
+        '''r = requests.post(self.URL,json=payload)
         res = r.json()
         respuesta=res[0]
         result=respuesta['result']
-
-        if (respuesta=="true"):
+        '''
+        result=True
+        gamecf= gc.GameConfig()
+        gamecf.mision="Luna de Endor"
+        gamecf.bando="Rebelde"
+        gamecf.dificultad="Facil"
+        gamecf.generateChanges()
+        '''
+        if (result=="true"):
             mision = respuesta['mision']
             bando = respuesta['bando']
             dificultad = respuesta['dificultad']
@@ -25,6 +32,7 @@ class ServiceLogin:
             config.dificultad=dificultad
         else:
             config = gc.GameConfig(result)
-        return config
+        '''
+        return result
 
 
