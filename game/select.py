@@ -13,6 +13,7 @@ class CharacterImg:
         self.heigh=self.myimage.get_height()
     def load_img(self):
         screnw= c.SCREENWIDTH/1200
+
         wid= round(self.width/screnw)
         hei=round(self.heigh/screnw)
         self.myimage = self.pygame.transform.scale(self.myimage, (wid,hei))

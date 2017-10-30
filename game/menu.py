@@ -1,11 +1,9 @@
 class Option:
     hovered = False
-
     def __init__(self, text, pos,screen,menu_font):
         self.text = text
         self.pos = pos
         self.set_rect(menu_font)
-        self.draw(screen,menu_font)
 
     def draw(self,screen,menu_font):
         self.set_rend(menu_font)

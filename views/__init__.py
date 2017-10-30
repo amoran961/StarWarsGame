@@ -1,31 +1,90 @@
 from tkinter import *
 import game.startgame
 import services.Service
-
+import game.constants as c
 bgclr = "#282828"
 fgclr = "#cecece"
 clr = '#004a95'
 
 
 def login(user_Entry, password_Entry, w, warn):
-
-    log= services.Service.ServiceLogin().login(user_Entry.get(),password_Entry.get())
+    log = services.Service.ServiceLogin().login(user_Entry.get(), password_Entry.get())
     users = [("dilip", "python")]
-    if (log==True):
+    if (log == True):
         w.destroy()
         game.startgame.start_game()
     else:
-        warn.config(text="Invalid username or Password", fg="red")
+        warn.config(text="Usuario y/o contraseña incorrecta", fg="red")
+
+def register():
+    log = services.Service.ServiceLogin().register(user_Entry.get(), password_Entry.get())
+    users = [("dilip", "python")]
+    if (log == True):
+      loginWindow()
+    else:
+        warn.config(text="Ocurrió un problem, intente luego", fg="red")
+
+
+def loginWindow():
+    button = Button(w,
+                    text="Login",
+                    bg=clr,
+                    fg="white",
+                    relief=GROOVE,
+                    highlightcolor=clr,
+                    highlightthickness=4,
+                    width=40,
+                    font=10,
+                    command=lambda: login(user_Entry, password_Entry, w, warn))
+    button.place(x=20, y=240)
+    buttonR = Button(w,
+                     text="Registrar",
+                     bg="#228B22	",
+                     fg="white",
+                     relief=GROOVE,
+                     highlightcolor=clr,
+                     highlightthickness=0,
+                     width=10,
+                     font=10,
+                     command=lambda:registerWindow())
+    buttonR.place(x=20, y=300)
+
+def registerWindow():
+    button = Button(w,
+                    text="Registrar",
+                    bg=clr,
+                    fg="white",
+                    relief=GROOVE,
+                    highlightcolor=clr,
+                    highlightthickness=4,
+                    width=40,
+                    font=10,
+                    command=lambda: login(user_Entry, password_Entry, w, warn))
+    button.place(x=20, y=240)
+
+    buttonR = Button(w,
+                     text="Login",
+                     bg="#228B22",
+                     fg="white",
+                     relief=GROOVE,
+                     highlightcolor=clr,
+                     highlightthickness=0,
+                     width=10,
+                     font=10,
+                     command=lambda: loginWindow())
+    buttonR.place(x=20, y=300)
+
+
 
 w = Tk()
 
-ws = w.winfo_screenwidth() # width of the screen
-hs = w.winfo_screenheight() # height of the screen
-wi = 450 # width for the Tk root0
-hi = 350 # height for the Tk root
+ws = w.winfo_screenwidth()  # width of the screen
+hs = w.winfo_screenheight()  # height of the screen
+wi = 450  # width for the Tk root0
+hi = 350  # height for the Tk root
 
-x = (ws/2) - (wi/2)
-y = (hs/2) - (hi/2)
+x = (ws / 2) - (wi / 2)
+y = (hs / 2) - (hi / 2)
 
 w.title("Star Wars")
 w.geometry('%dx%d+%d+%d' % (wi, hi, x, y))
@@ -75,16 +134,8 @@ warn = Label(w,
              bg=bgclr)
 
 warn.place(x=80, y=200)
-
-button = Button(w,
-                text="Login",
-                bg=clr,
-                fg="white",
-                relief=GROOVE,
-                highlightcolor=clr,
-                highlightthickness=4,
-                width=40,
-                font=10,
-                command=lambda: login(user_Entry, password_Entry, w, warn))
-button.place(x=20, y=240)
+loginWindow()
 w.mainloop()
+
+
+
