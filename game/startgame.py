@@ -123,19 +123,12 @@ def game_menu(clock):
                             gameSK.shoot()
 
                         if event.type == pygame.KEYDOWN:
-                            if event.key == pygame.K_RETURN:
-                                if not gameSK.running:
-                                    # ------The user's menu selection----------------
-                                    if gameSK.menu_choice == 0:
-                                        gameSK.start_game()
-                                    elif gameSK.menu_choice == 1:
-                                        gameSK.display_help_screen = True
-                                    elif gameSK.menu_choice == 2:
-                                        gameSK.display_credits_screen = True
-                                    elif gameSK.menu_choice == 3:
-                                        done = True
-
-
+                            if event.key == pygame.K_p and c.STATE == "PAUSE":
+                                c.STATE = ""
+                                gameSK.running=True
+                            elif event.key == pygame.K_p and c.STATE != "PAUSE":
+                                c.STATE = "PAUSE"
+                                gameSK.running=False
 
                             elif event.key == pygame.K_ESCAPE:
                                 if gameSK.running:
@@ -159,7 +152,8 @@ def game_menu(clock):
 
                     # --- Limit to 30 frames per second
                     clock.tick(30)
-
+        if c.STATE=="PAUSE":
+            c.GAME_DISPLAY.blit("En pausa", (100, 100))
         for option in options:
             if option.rect.collidepoint(pygame.mouse.get_pos()):
                 option.hovered = True
@@ -169,6 +163,7 @@ def game_menu(clock):
 
         for event in pygame.event.get():
             print(event)
+
             if event.type == pygame.QUIT:
                 pygame.quit()
                 quit()
@@ -189,7 +184,6 @@ def game_menu(clock):
 
                         elif option.rect.collidepoint(pygame.mouse.get_pos()) and trivia.contestar(option.text)==False:
                             c.STATE = "TRIVIA_INCORRECTA"
-
 
                 if c.STATE=="SELECT_CHAR":
                     for char in c.CHARS:

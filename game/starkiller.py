@@ -239,6 +239,9 @@ class Game(object):
             self.explosion.draw(screen)
             if self.terminate_count_down <= 90:
                 screen.blit(c.IMAGES["gameOver"], (200, 200))
+        elif self.running==False and c.STATE=="PAUSE":
+            pausa=self.font.render("En pausa", True, (0, 0, 0))
+            screen.blit(pausa, (400, 300))
         else:
             c.STATE="MENU"
 
