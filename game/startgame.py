@@ -7,6 +7,8 @@ import game.menu
 import game.select
 import game.gameconf as gc
 import game.constants as c
+import game.starkiller as sk
+import game.fileLoader as fl
 
 
 def start_game():
@@ -33,11 +35,9 @@ def game_menu(clock):
     pygame.mixer.music.load(file)
     pygame.mixer.music.play()
 
-    state = "MENU"
-
     while intro and pygame.mixer.music.get_busy:
         options = []
-        if (state == "MENU"):
+        if (c.STATE == "MENU"):
             pygame.mixer.music.unpause()
             bg = pygame.image.load(c.MENU_IMG)
             bg = pygame.transform.scale(bg, (c.SCREENWIDTH, c.SCREENHEIGHT))
@@ -47,7 +47,7 @@ def game_menu(clock):
             c.GAME_DISPLAY.blit(bg, (0, 0))
 
 
-        if (state == "SELECT_CHAR"):
+        if (c.STATE == "SELECT_CHAR"):
             bg = pygame.image.load(c.CHAR_IMG)
             bg = pygame.transform.scale(bg, (c.SCREENWIDTH, c.SCREENHEIGHT))
             c.GAME_DISPLAY.blit(bg, (0, 0))
@@ -62,7 +62,7 @@ def game_menu(clock):
             for char in c.CHARS:
                 if char.image_rect.collidepoint(pygame.mouse.get_pos()):
                     char.show_story()
-        if (state=="TRIVIA"):
+        if (c.STATE=="TRIVIA"):
 
             bg = pygame.image.load(c.TRIV_IMG)
             bg = pygame.transform.scale(bg, (c.SCREENWIDTH, c.SCREENHEIGHT))
@@ -80,7 +80,8 @@ def game_menu(clock):
                 altheight=altheight- 1.5*alternativa.rect.height
                 alternativa.draw(c.GAME_DISPLAY, menu_font)
                 options.append(alternativa)
-        if (state== "TRIVIA_CORRECTA"):
+
+        if (c.STATE== "TRIVIA_CORRECTA"):
             bg = pygame.image.load(c.TRIV_IMG)
             bg = pygame.transform.scale(bg, (c.SCREENWIDTH, c.SCREENHEIGHT))
             c.GAME_DISPLAY.blit(bg, (0, 0))
@@ -91,10 +92,7 @@ def game_menu(clock):
             startopt= game.select.CharacterImg("Inicio",((c.SCREENWIDTH / 2.9), (c.SCREENHEIGHT / 2.8)),"start.png",pygame, "luke_story.png")
             startopt.load_img()
             resultado.draw(c.GAME_DISPLAY, menu_font)
-
-
-
-        elif (state== "TRIVIA_INCORRECTA"):
+        elif (c.STATE== "TRIVIA_INCORRECTA"):
             bg = pygame.image.load(c.TRIV_IMG)
             bg = pygame.transform.scale(bg, (c.SCREENWIDTH, c.SCREENHEIGHT))
             c.GAME_DISPLAY.blit(bg, (0, 0))
@@ -106,6 +104,61 @@ def game_menu(clock):
             startopt.load_img()
             resultado.draw(c.GAME_DISPLAY, menu_font)
 
+        if (c.STATE == "EN_JUEGO"):
+            if(c.MISION=="Ataque a la Estrella de la Muerte"):
+                gamecf=gc.GameConfig()
+                c.IMAGES = gamecf.loadImages()
+                c.SOUNDS = gamecf.loadSounds()
+                gameSK = sk.Game()
+                gameSK.start_game()
+                done = False
+
+                while not done:
+                    # --- Main event loop
+                    for event in pygame.event.get():  # User did something
+                        if event.type == pygame.QUIT or c.STATE=="MENU":  # If user clicked close
+                            done = True  # Flag that we are done so we exit this loop
+
+                        if event.type == pygame.MOUSEBUTTONDOWN:
+                            gameSK.shoot()
+
+                        if event.type == pygame.KEYDOWN:
+                            if event.key == pygame.K_RETURN:
+                                if not gameSK.running:
+                                    # ------The user's menu selection----------------
+                                    if gameSK.menu_choice == 0:
+                                        gameSK.start_game()
+                                    elif gameSK.menu_choice == 1:
+                                        gameSK.display_help_screen = True
+                                    elif gameSK.menu_choice == 2:
+                                        gameSK.display_credits_screen = True
+                                    elif gameSK.menu_choice == 3:
+                                        done = True
+
+
+
+                            elif event.key == pygame.K_ESCAPE:
+                                if gameSK.running:
+                                    gameSK.running = False
+                                    c.SOUNDS["plane"].stop()
+                                else:
+                                    gameSK.display_help_screen = False
+                                    gameSK.display_credits_screen = False
+
+                    # --- Game logic should go here
+                    if gameSK.running:
+                        gameSK.run_game()
+                    # First, clear the screen to white. Don't put other drawing commands
+                    # above this, or they will be erased with this command.
+                    c.GAME_DISPLAY.fill((255, 255, 255))
+
+                    # --- Drawing code should go here
+                    gameSK.display_frame(c.GAME_DISPLAY)
+                    # --- Go ahead and update the screen with what we've drawn.
+                    pygame.display.flip()
+
+                    # --- Limit to 30 frames per second
+                    clock.tick(30)
 
         for option in options:
             if option.rect.collidepoint(pygame.mouse.get_pos()):
@@ -121,27 +174,37 @@ def game_menu(clock):
                 quit()
             if event.type == pygame.MOUSEBUTTONDOWN:
 
-                if state == "TRIVIA":
+                if c.STATE == "TRIVIA_CORRECTA":
+                    if startopt.image_rect.collidepoint(pygame.mouse.get_pos()):
+                        c.STATE="EN_JUEGO"
+
+                elif c.STATE == "TRIVIA_INCORRECTA":
+                    if startopt.image_rect.collidepoint(pygame.mouse.get_pos()):
+                        c.STATE="EN_JUEGO"
+
+                if c.STATE == "TRIVIA":
                     for option in options:
                         if option.rect.collidepoint(pygame.mouse.get_pos()) and trivia.contestar(option.text):
-                            state = "TRIVIA_CORRECTA"
-                        elif option.rect.collidepoint(pygame.mouse.get_pos()) and trivia.contestar(option.text)==False:
-                            state = "TRIVIA_INCORRECTA"
+                            c.STATE = "TRIVIA_CORRECTA"
 
-                if state=="SELECT_CHAR":
+                        elif option.rect.collidepoint(pygame.mouse.get_pos()) and trivia.contestar(option.text)==False:
+                            c.STATE = "TRIVIA_INCORRECTA"
+
+
+                if c.STATE=="SELECT_CHAR":
                     for char in c.CHARS:
                         if char.image_rect.collidepoint(pygame.mouse.get_pos()):
-                            state="TRIVIA"
-                            c.SELECTED_CHAR=char.name
+                            c.STATE="TRIVIA"
+                            c.SELECTED_CHAR=char.img
 
                 for option in options:
                     if option.rect.collidepoint(pygame.mouse.get_pos()) and option.text=="New game":
-                        state = "SELECT_CHAR"
+                        c.STATE = "SELECT_CHAR"
                     elif option.rect.collidepoint(pygame.mouse.get_pos()) and option.text=="Quit":
                         pygame.quit()
                         quit()
                     elif option.rect.collidepoint(pygame.mouse.get_pos()) and option.text == "Back":
-                        state="MENU"
+                        c.STATE="MENU"
 
             pygame.display.update()
 
