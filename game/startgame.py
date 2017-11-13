@@ -27,7 +27,7 @@ def start_game():
 def game_menu(clock):
     intro = True
 
-    menu_font = pygame.font.Font(None, 40)
+    menu_font = pygame.font.Font(None,25)
     file = c.MENU_AUD
     pygame.mixer.init()
     pygame.mixer.music.load(file)

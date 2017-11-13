@@ -20,7 +20,7 @@ class TriviaFactory():
             alternativas = ["d. Kamino", "c. Utapau", "b. Ryloth", "a. Mustafar"]
             res = "d. Kamino"
             trivia = Trivia(pregunta, alternativas, res)
-        elif (dificultad == "Medio"):
+        elif (dificultad == "Intermedio"):
             pregunta = "¿Quién es más loco, el loco o el loco que sigue al loco? Fue una frase pronunciada por"
             alternativas = ["d. Qui-Gon Jinn", "c. Obi-Wan Kenobi", "b. Han Solo", "a. Yoda"]
             res = "b. Han Solo"

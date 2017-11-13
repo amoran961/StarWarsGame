@@ -12,7 +12,7 @@ class CharacterImg:
         self.width=self.myimage.get_width()
         self.heigh=self.myimage.get_height()
     def load_img(self):
-        screnw= c.SCREENWIDTH/1200
+        screnw= c.SCREENWIDTH/700
 
         wid= round(self.width/screnw)
         hei=round(self.heigh/screnw)

@@ -1,7 +1,7 @@
 from win32api import GetSystemMetrics
 
-SCREENWIDTH = GetSystemMetrics(0)
-SCREENHEIGHT = GetSystemMetrics(1)
+SCREENWIDTH = 800
+SCREENHEIGHT = 600
 GAME=""
 GAME_DISPLAY=""
 MENU_IMG=""

@@ -16,13 +16,13 @@ def login(user_Entry, password_Entry, w, warn):
     else:
         warn.config(text="Usuario y/o contraseña incorrecta", fg="red")
 
-def register():
+def register(user_Entry, password_Entry, w, warn):
     log = services.Service.ServiceLogin().register(user_Entry.get(), password_Entry.get())
     users = [("dilip", "python")]
     if (log == True):
       loginWindow()
     else:
-        warn.config(text="Ocurrió un problem, intente luego", fg="red")
+        warn.config(text="Ocurrió un problema, intente luego", fg="red")
 
 
 def loginWindow():
@@ -59,7 +59,7 @@ def registerWindow():
                     highlightthickness=4,
                     width=40,
                     font=10,
-                    command=lambda: login(user_Entry, password_Entry, w, warn))
+                    command=lambda: register(user_Entry, password_Entry, w, warn))
     button.place(x=20, y=240)
 
     buttonR = Button(w,
