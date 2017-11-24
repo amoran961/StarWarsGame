@@ -11,9 +11,9 @@ class CharacterImg:
         self.mystory=self.pygame.image.load(story)
         self.width=self.myimage.get_width()
         self.heigh=self.myimage.get_height()
+
     def load_img(self):
         screnw= c.SCREENWIDTH/700
-
         wid= round(self.width/screnw)
         hei=round(self.heigh/screnw)
         self.myimage = self.pygame.transform.scale(self.myimage, (wid,hei))
@@ -28,5 +28,3 @@ class CharacterImg:
         hei = round(self.mystory.get_height() / storyh)
         mystory = self.pygame.transform.scale(self.mystory, (wid, hei))
         c.GAME_DISPLAY.blit(mystory, posstory)
-
-

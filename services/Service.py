@@ -3,8 +3,6 @@ import json
 import game.gameconf as gc
 
 class ServiceLogin:
-
-
     def __init__(self):
             pass
 
@@ -15,7 +13,6 @@ class ServiceLogin:
         res = r.json()
         respuesta=res[0]
         result=respuesta['result']
-
         if (result=="true"):
             mision = respuesta['mision']
             bando = respuesta['bando']
@@ -47,8 +44,4 @@ class ServiceLogin:
             print(err)
         except ValueError:
             print("Usuario ya existe")
-
         return result
-
-
-

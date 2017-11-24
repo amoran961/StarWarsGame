@@ -2,6 +2,7 @@ import game.constants as c
 import game.select
 import game.menu
 import pygame
+
 class Trivia:
     def __init__(self,pregunta,alternativas,res):
         self.pregunta=pregunta
@@ -12,6 +13,7 @@ class Trivia:
         if(self.res==respuesta):
             result=True
         return result
+
 class TriviaFactory():
     def retornarTrivias(self,dificultad):
         trivia =""
@@ -30,60 +32,32 @@ class TriviaFactory():
             alternativas = ["d. Sullustana", "c. Rodiana", "b. Saleucami", "a. Twi'lek"]
             res = "c. Rodiana"
             trivia = Trivia(pregunta, alternativas, res)
-
         return trivia
 
 class GameConfig:
     def __init__(self):
-        self.mision=""
         self.bando=""
         self.dificultad=""
         self.trivias=[]
 
     def generateChanges(self):
-
         c.DIFICULTAD=self.dificultad
-        c.MISION=self.mision
         c.BANDO=self.bando
-        if(self.mision=="Asalto a la luna de Endor"):
-            c.MENU_IMG="menu_endor.png"
-            c.MENU_AUD="menu_endor.mp3"
-            c.CHAR_IMG="char_endor.png"
-            c.TRIV_IMG = "triv_endor.png"
-
-            if (self.bando == "Rebeldes"):
-                op1 = game.select.CharacterImg("Luke", ((c.SCREENWIDTH / 3), (c.SCREENHEIGHT / 18)), "luke_select.png",
-                                               pygame, "luke_story.png")
-                op2 = game.select.CharacterImg("Solo", ((c.SCREENWIDTH / 3) + c.SCREENWIDTH / 5, (c.SCREENHEIGHT / 18)),
-                                               "solo_select.png", pygame, "solo_story.png")
-                c.CHARS = [op1, op2]
-            elif (self.bando == "Imperio"):
-                op1 = game.select.CharacterImg("Vader", ((c.SCREENWIDTH / 3), (c.SCREENHEIGHT / 18)),
-                                               "vader_select.png", pygame, "vader_story.png")
-                op2 = game.select.CharacterImg("Sidious",
-                                               ((c.SCREENWIDTH / 3) + c.SCREENWIDTH / 5, (c.SCREENHEIGHT / 18)),
-                                               "sidious_select.png", pygame, "sidious_story.png")
-                c.CHARS = [op1, op2]
-
-
-        elif(self.mision=="Ataque a la Estrella de la Muerte"):
-            c.MENU_IMG="menu_estrella.png"
-            c.MENU_AUD = "menu_estrella.mp3"
-            c.CHAR_IMG="char_estrella.png"
-            c.TRIV_IMG = "triv_estrella.png"
-
-            if(self.bando=="Rebeldes"):
-                op1 = game.select.CharacterImg("caza_rebelde", ((c.SCREENWIDTH / 3), (c.SCREENHEIGHT / 18)),"caza_rebelde.png",pygame, "luke_story.png")
-                op2 = game.select.CharacterImg("halcon_milenario", ((c.SCREENWIDTH / 3) + c.SCREENWIDTH/5, (c.SCREENHEIGHT / 18)), "halcon_milenario.png",pygame, "solo_story.png")
-                c.CHARS=[op1,op2]
-            elif(self.bando=="Imperio"):
-                op1 = game.select.CharacterImg("tie_imperial", ((c.SCREENWIDTH / 3), (c.SCREENHEIGHT / 18)), "tie_imperial.png",pygame, "vader_story.png")
-                op2 = game.select.CharacterImg("interdictor_imperial", ((c.SCREENWIDTH / 3) + c.SCREENWIDTH/5, (c.SCREENHEIGHT / 18)),"interdictor_imperial.png", pygame, "sidious_story.png")
-                c.CHARS = [op1, op2]
+        c.MENU_IMG="menu_estrella.png"
+        c.MENU_AUD = "menu_estrella.mp3"
+        c.CHAR_IMG="char_estrella.png"
+        c.TRIV_IMG = "triv_estrella.png"
+        if(self.bando=="Rebeldes"):
+            op1 = game.select.CharacterImg("caza_rebelde", ((c.SCREENWIDTH / 3), (c.SCREENHEIGHT / 18)),"caza_rebelde.png",pygame, "luke_story.png")
+            op2 = game.select.CharacterImg("halcon_milenario", ((c.SCREENWIDTH / 3) + c.SCREENWIDTH/5, (c.SCREENHEIGHT / 18)), "halcon_milenario.png",pygame, "solo_story.png")
+            c.CHARS=[op1,op2]
+        elif(self.bando=="Imperio"):
+            op1 = game.select.CharacterImg("tie_imperial", ((c.SCREENWIDTH / 3), (c.SCREENHEIGHT / 18)), "tie_imperial.png",pygame, "vader_story.png")
+            op2 = game.select.CharacterImg("interdictor_imperial", ((c.SCREENWIDTH / 3) + c.SCREENWIDTH/5, (c.SCREENHEIGHT / 18)),"interdictor_imperial.png", pygame, "sidious_story.png")
+            c.CHARS = [op1, op2]
 
     def loadImages(self):
         images = {}
-
         images["explosion01"] = pygame.image.load("explosion01.png").convert_alpha()
         images["explosion02"] = pygame.image.load("explosion02.png").convert_alpha()
         images["explosion03"] = pygame.image.load("explosion03.png").convert_alpha()
@@ -107,32 +81,16 @@ class GameConfig:
             images["enemy1"] = pygame.image.load("enemy_rebelde1.png").convert_alpha()
             images["enemy2"] = pygame.image.load("enemy_rebelde2.png").convert_alpha()
             images["enemy3"] = pygame.image.load("enemy_rebelde3.png").convert_alpha()
-
         images["ocean"] = pygame.image.load("ocean_texture.png").convert()
         images["missile"] = pygame.image.load("missile.png").convert_alpha()
         images["projectile"] = pygame.image.load("projectile.png").convert()
         images["projectile"].set_colorkey((0, 0, 0))
         images["gameOver"] = pygame.image.load("game_over.png").convert()
         images["gameOver"].set_colorkey((0, 0, 0))
-
         return images
 
     def loadSounds(self):
         sounds = {}
-
         sounds["explosion"] = pygame.mixer.Sound("explosion.ogg")
         sounds["plane"] = pygame.mixer.Sound("plane.ogg")
-
         return sounds
-
-
-
-
-
-
-
-
-
-
-
-
