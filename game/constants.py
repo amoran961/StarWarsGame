@@ -2,8 +2,8 @@ from win32api import GetSystemMetrics
 from game.fileLoader import *
 
 MISION=""
-SCREENWIDTH = 800
-SCREENHEIGHT = 600
+SCREENWIDTH = 950
+SCREENHEIGHT = 700
 GAME=""
 GAME_DISPLAY=""
 MENU_IMG=""
@@ -17,3 +17,4 @@ IMAGES=None
 SOUNDS=None
 STATE="MENU"
 BANDO=""
+LIVES=""

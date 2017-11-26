@@ -36,7 +36,7 @@ class Enemy(pygame.sprite.Sprite):
             self.rect.topleft = (150, -70)
             self.speed_x = 0
         else:
-            self.rect.topleft = (random.randint(500, 800), -70)
+            self.rect.topleft = (random.randint(500, 950), -70)
             if self.rect.x < 210:
                 self.speed_x = random.randint(-1, 5)
             elif self.rect.x < 315:
@@ -87,9 +87,21 @@ class Player(pygame.sprite.Sprite):
         self.image.set_colorkey((0, 0, 0))
         self.rect = self.image.get_rect()
         self.mask = pygame.mask.from_surface(self.image)
+        self.rect.center=(c.SCREENHEIGHT/2,c.SCREENWIDTH/2)
+    def update(self,direction):
+        '''self.rect.center = pygame.mouse.get_pos()'''
+        if direction == "down":
+            self.rect.centery=self.rect.centery+4
+            c.SOUNDS["rocket"].play()
+        if direction == "up":
+            self.rect.centery=self.rect.centery -4
+            c.SOUNDS["rocket"].play()
+        if direction == "right":
+            self.rect.centerx = self.rect.centerx + 4
+        if direction == "left":
+            self.rect.centerx = self.rect.centerx -4
 
-    def update(self):
-        self.rect.center = pygame.mouse.get_pos()
+
 
 class Game(object):
     display_help_screen = False
@@ -102,7 +114,7 @@ class Game(object):
     menu_choice = 0
     score_text = None
     level_text = None
-
+    direction=None
     def __init__(self):
         self.player = Player()
         self.player_list = pygame.sprite.Group()
@@ -131,30 +143,30 @@ class Game(object):
         if len(self.projectile_list) > 0:
             self.projectile_list.empty()
         self.tick_delay = 35
-        self.level = 1
+        c.LIVES = 4
         self.score_text = self.font.render("Score: 0", True, (255, 255, 255))
-        self.level_text = self.font.render("Level: 1", True, (255, 255, 255))
+        self.life_text = self.font.render("Shield: " + str(c.LIVES), True, (255, 255, 255))
 
     def run_game(self):
         if not self.terminate:
-            self.player.update()
+            self.player.update(self.direction)
         self.enemy_list.update()
         self.missile_list.update()
         self.projectile_list.update()
         for missile in self.missile_list:
-            if missile.rect.x < 0 or missile.rect.x > 800:
+            if missile.rect.x < 0 or missile.rect.x > 950:
                 self.missile_list.remove(missile)
-            elif missile.rect.y < - 40 or missile.rect.y > 600:
+            elif missile.rect.y < - 40 or missile.rect.y > 700:
                 self.missile_list.remove(missile)
         for projectile in self.projectile_list:
-            if projectile.rect.x < 0 or projectile.rect.x > 800:
+            if projectile.rect.x < 0 or projectile.rect.x > 950:
                 self.projectile_list.remove(projectile)
-            elif projectile.rect.y < - 20 or projectile.rect.y > 600:
+            elif projectile.rect.y < - 20 or projectile.rect.y > 700:
                 self.projectile_list.remove(projectile)
         for enemy in self.enemy_list:
-            if enemy.rect.x < -120 or enemy.rect.x > 800:
+            if enemy.rect.x < -120 or enemy.rect.x > 950:
                 self.enemy_list.remove(enemy)
-            elif enemy.rect.y < -100 or enemy.rect.y > 600:
+            elif enemy.rect.y < -100 or enemy.rect.y > 700:
                 self.enemy_list.remove(enemy)
         for enemy in self.enemy_list:
             hit_list = pygame.sprite.spritecollide(enemy, self.missile_list, True)
@@ -174,7 +186,7 @@ class Game(object):
                         self.level_text = self.font.render("Level: " + str(self.level), True, (255, 255, 255))
                 self.score_text = self.font.render("Score: " + str(self.score), True, (255, 255, 255))
         hit_list = pygame.sprite.spritecollide(self.player, self.enemy_list, False, pygame.sprite.collide_mask)
-        if len(hit_list) > 0 and not self.terminate:
+        if len(hit_list) > 0 and not self.terminate and c.LIVES<=0:
             self.terminate = True
             self.explosion.add(self.player.rect.topleft)
             c.SOUNDS["plane"].stop()
@@ -182,12 +194,19 @@ class Game(object):
                 self.explosion.add(enemy.rect.topleft)
                 self.enemy_list.remove(enemy)
         hit_list = pygame.sprite.spritecollide(self.player, self.projectile_list, False, pygame.sprite.collide_mask)
-        if len(hit_list) > 0 and not self.terminate:
+        if len(hit_list) > 0 and not self.terminate and c.LIVES<=0:
             self.terminate = True
             self.explosion.add(self.player.rect.topleft)
             c.SOUNDS["plane"].stop()
             for projectile in hit_list:
                 self.projectile_list.remove(projectile)
+        if len(hit_list) > 0 and not self.terminate and c.LIVES > 0:
+            self.explosion.add(self.player.rect.topleft)
+            c.LIVES=c.LIVES-1
+            for projectile in hit_list:
+                self.projectile_list.remove(projectile)
+            self.life_text = self.font.render("Shield: " + str(c.LIVES), True, (255, 255, 255))
+
         if self.tick == 0:
             enemy = Enemy(random.choice((c.IMAGES["enemy1"], c.IMAGES["enemy2"], c.IMAGES["enemy3"])), self.projectile_list,
                           self.tick_delay)
@@ -215,17 +234,32 @@ class Game(object):
             if not self.terminate:
                 self.player_list.draw(screen)
             screen.blit(self.score_text, (75, 20))
-            screen.blit(self.level_text, (285, 20))
+            screen.blit(self.life_text, (285, 20))
             self.explosion.draw(screen)
             if self.terminate_count_down <= 90:
                 screen.blit(c.IMAGES["gameOver"], (200, 200))
         elif self.running==False and c.STATE=="PAUSE":
-            pausa=self.font.render("En pausa", True, (0, 0, 0))
-            screen.blit(pausa, (400, 300))
+            screen.blit(c.IMAGES["ocean"], (0, self.texture_increment))
+            self.missile_list.draw(screen)
+            self.projectile_list.draw(screen)
+            self.enemy_list.draw(screen)
+            if not self.terminate:
+                self.player_list.draw(screen)
+            screen.blit(self.score_text, (75, 20))
+            screen.blit(self.life_text, (285, 20))
+            self.explosion.draw(screen)
+            pausa=self.font.render("En pausa", True, (255, 255, 255))
+            screen.blit(pausa, (c.SCREENHEIGHT/2, c.SCREENWIDTH/2))
         else:
             c.STATE="MENU"
-
     def shoot(self):
-        missile = Missile(self.player.rect.center, c.IMAGES["missile"])
+        pos1= (self.player.rect.centerx+20,self.player.rect.centery)
+        pos2 = (self.player.rect.centerx - 20, self.player.rect.centery)
+
+        missile = Missile(pos1, c.IMAGES["missile"])
+        missile2 = Missile(pos2, c.IMAGES["missile"])
         missile.speed_y = -10
+        missile2.speed_y = -10
+        c.SOUNDS["shoot"].play()
         self.missile_list.add(missile)
+        self.missile_list.add(missile2)

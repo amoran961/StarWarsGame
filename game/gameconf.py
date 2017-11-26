@@ -73,7 +73,7 @@ class GameConfig:
         images["explosion13"] = pygame.image.load("explosion13.png").convert_alpha()
         images["explosion14"] = pygame.image.load("explosion14.png").convert_alpha()
         images["explosion15"] = pygame.image.load("explosion15.png").convert_alpha()
-        if (c.BANDO == "Rebelde"):
+        if (c.BANDO == "Rebeldes"):
             images["enemy1"] = pygame.image.load("enemy_imperial1.png").convert_alpha()
             images["enemy2"] = pygame.image.load("enemy_imperial2.png").convert_alpha()
             images["enemy3"] = pygame.image.load("enemy_imperial3.png").convert_alpha()
@@ -93,4 +93,6 @@ class GameConfig:
         sounds = {}
         sounds["explosion"] = pygame.mixer.Sound("explosion.ogg")
         sounds["plane"] = pygame.mixer.Sound("plane.ogg")
+        sounds["shoot"]=pygame.mixer.Sound("shoot.ogg")
+        sounds["rocket"] = pygame.mixer.Sound("rocket.ogg")
         return sounds

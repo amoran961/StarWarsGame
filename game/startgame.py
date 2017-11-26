@@ -89,7 +89,6 @@ def game_menu(clock):
             startopt.load_img()
             resultado.draw(c.GAME_DISPLAY, menu_font)
         if (c.STATE == "EN_JUEGO"):
-            if(c.MISION=="Ataque a la Estrella de la Muerte"):
                 gamecf=gc.GameConfig()
                 c.IMAGES = gamecf.loadImages()
                 c.SOUNDS = gamecf.loadSounds()
@@ -101,11 +100,19 @@ def game_menu(clock):
                     for event in pygame.event.get():  # User did something
                         if event.type == pygame.QUIT or c.STATE=="MENU":  # If user clicked close
                             done = True  # Flag that we are done so we exit this loop
-                        if event.type == pygame.MOUSEBUTTONDOWN:
-                            gameSK.shoot()
                         if event.type == pygame.KEYDOWN:
+                            if event.key == pygame.K_x and c.STATE == "EN_JUEGO":
+                                gameSK.shoot()
+                            if event.key == pygame.K_UP and c.STATE == "EN_JUEGO":
+                                gameSK.direction="up"
+                            if event.key == pygame.K_DOWN and c.STATE == "EN_JUEGO":
+                                    gameSK.direction = "down"
+                            if event.key == pygame.K_RIGHT and c.STATE == "EN_JUEGO":
+                                    gameSK.direction = "right"
+                            if event.key == pygame.K_LEFT and c.STATE == "EN_JUEGO":
+                                    gameSK.direction = "left"
                             if event.key == pygame.K_p and c.STATE == "PAUSE":
-                                c.STATE = ""
+                                c.STATE = "EN_JUEGO"
                                 gameSK.running=True
                             elif event.key == pygame.K_p and c.STATE != "PAUSE":
                                 c.STATE = "PAUSE"
@@ -117,6 +124,17 @@ def game_menu(clock):
                                 else:
                                     gameSK.display_help_screen = False
                                     gameSK.display_credits_screen = False
+                        if event.type == pygame.KEYUP:
+                            if event.key == pygame.K_UP and c.STATE == "EN_JUEGO":
+                                gameSK.direction = ""
+                            if event.key == pygame.K_DOWN and c.STATE == "EN_JUEGO":
+                                gameSK.direction = ""
+                            if event.key == pygame.K_RIGHT and c.STATE == "EN_JUEGO":
+                                gameSK.direction = ""
+                            if event.key == pygame.K_LEFT and c.STATE == "EN_JUEGO":
+                                gameSK.direction = ""
+
+
                     # --- Game logic should go here
                     if gameSK.running:
                         gameSK.run_game()
@@ -129,8 +147,6 @@ def game_menu(clock):
                     pygame.display.flip()
                     # --- Limit to 30 frames per second
                     clock.tick(30)
-        if c.STATE=="PAUSE":
-            c.GAME_DISPLAY.blit("En pausa", (100, 100))
         for option in options:
             if option.rect.collidepoint(pygame.mouse.get_pos()):
                 option.hovered = True
