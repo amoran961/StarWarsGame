@@ -186,7 +186,7 @@ class Game(object):
                         self.level_text = self.font.render("Level: " + str(self.level), True, (255, 255, 255))
                 self.score_text = self.font.render("Score: " + str(self.score), True, (255, 255, 255))
         hit_list = pygame.sprite.spritecollide(self.player, self.enemy_list, False, pygame.sprite.collide_mask)
-        if len(hit_list) > 0 and not self.terminate and c.LIVES<=0:
+        if len(hit_list) > 0 and not self.terminate:
             self.terminate = True
             self.explosion.add(self.player.rect.topleft)
             c.SOUNDS["plane"].stop()
