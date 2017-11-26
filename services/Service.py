@@ -45,3 +45,16 @@ class ServiceLogin:
         except ValueError:
             print("Usuario ya existe")
         return result
+
+    def register_record(selfself,user,record):
+        result=False
+        url = "https://starwarsconsola.herokuapp.com/StarWarsConsole/register_record"
+        payload = {'id':user,'record':record}
+        r = requests.post(url,json=payload)
+        res=r.json()
+        respuesta=res[0]
+        result=respuesta['result']
+        if(result=="true"):
+            result=True
+        return result
+    
