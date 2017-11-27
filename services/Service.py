@@ -1,6 +1,7 @@
 import requests
 import json
 import game.gameconf as gc
+import game.ranking as gr
 
 class ServiceLogin:
     def __init__(self):
@@ -46,15 +47,36 @@ class ServiceLogin:
             print("Usuario ya existe")
         return result
 
-    def register_record(selfself,user,record):
+    def register_record(self,user,record):
         result=False
-        url = "https://starwarsconsola.herokuapp.com/StarWarsConsole/register_record"
+        url = "https://starwarsconsola.herokuapp.com/StarWarsConsole/register_record/"
         payload = {'id':user,'record':record}
-        r = requests.post(url,json=payload)
+        try:
+            r = requests.post(url,json=payload)
+            res=r.json()
+            respuesta=res[0]
+            result=respuesta['result']
+            if(result=="true"):
+                result=True
+        except requests.exceptions.HTTPError as err:
+            print(err)
+        return result
+
+    def ranking(self):
+        result=False
+        url = "https://starwarsconsola.herokuapp.com/StarWarsConsole/ranking/"
+        r = requests.post(url)
         res=r.json()
         respuesta=res[0]
         result=respuesta['result']
-        if(result=="true"):
+        rank = gr.Ranking()
+        rank.result=result
+        if (result=='true'):
+            total = respuesta['total']
+            ranking = respuesta['ranking']
+            rank.total=total
+            rank.ranking=ranking
             result=True
+        else:
+            result=False
         return result
-    

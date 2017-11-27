@@ -1,6 +1,7 @@
 import pygame, random
 from game.fileLoader import *
 import game.constants as c
+import services.Service
 
 
 class Explosion(object):
@@ -304,7 +305,9 @@ class Game(object):
             screen.blit(self.life_text, (285, 20))
             self.explosion.draw(screen)
             if self.terminate_count_down <= 90:
-                screen.blit(c.IMAGES["gameOver"], (200, 200))
+                log = services.Service.ServiceLogin().register_record(c.USER, self.score)
+                if(log==True):
+                    screen.blit(c.IMAGES["gameOver"], (200, 200))
         elif self.running == False and c.STATE == "PAUSE":
             screen.blit(c.IMAGES["ocean"], (0, self.texture_increment))
             self.missile_list.draw(screen)
@@ -319,7 +322,7 @@ class Game(object):
             pausa = self.font.render("En pausa", True, (255, 255, 255))
             screen.blit(pausa, (c.SCREENHEIGHT / 2, c.SCREENWIDTH / 2))
         else:
-            c.STATE = "MENU"
+            c.STATE = "RANKING"
 
     def shoot(self):
         pos1 = (self.player.rect.centerx + 20, self.player.rect.centery)

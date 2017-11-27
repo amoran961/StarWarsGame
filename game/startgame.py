@@ -8,6 +8,7 @@ import game.select
 import game.gameconf as gc
 import game.constants as c
 import game.starkiller as sk
+import services.Service
 import game.fileLoader as fl
 
 def start_game():
@@ -88,6 +89,61 @@ def game_menu(clock):
                                                 pygame, "luke_story.png")
             startopt.load_img()
             resultado.draw(c.GAME_DISPLAY, menu_font)
+        if (c.STATE == "RANKING"):
+            log = services.Service.ServiceLogin().ranking()
+            if (log == True):
+                bg = pygame.image.load(c.TRIV_IMG)
+                bg = pygame.transform.scale(bg, (c.SCREENWIDTH, c.SCREENHEIGHT))
+                c.GAME_DISPLAY.blit(bg, (0, 0))
+                total = c.TOTAL
+                ranking = c.RANKING
+                result = c.RESULT_RANKING
+                i = 0
+                for record in ranking:
+                    if (result == "false"):
+                        lista_ranking = game.menu.Option("No hay puntuaciones guardadas",
+                                                         (c.SCREENWIDTH / 4, c.SCREENHEIGHT / 2), c.GAME_DISPLAY,
+                                                         menu_font)
+                        lista_ranking.rect.center = (c.SCREENWIDTH / 2, c.SCREENHEIGHT / 4)
+                        lista_ranking.draw(c.GAME_DISPLAY, menu_font)
+                        altheight = (c.SCREENHEIGHT / 2)
+                        op = game.menu.Option("Menu", (c.SCREENWIDTH / 4, c.SCREENHEIGHT / 2), c.GAME_DISPLAY,
+                                              menu_font)
+                        op.rect.center = (c.SCREENWIDTH / 2, altheight)
+                        altheight = altheight - 1.5 * opt.rect.height
+                        opt.draw(c.GAME_DISPLAY, menu_font)
+                        options.append(opt)
+                    else:
+                        lista_ranking = game.menu.Option("Ranking de puntuaciones",
+                                                         (c.SCREENWIDTH / 4, c.SCREENHEIGHT / 2), c.GAME_DISPLAY,
+                                                         menu_font)
+                        lista_ranking.rect.center = (c.SCREENWIDTH / 2, c.SCREENHEIGHT / 4)
+                        lista_ranking.draw(c.GAME_DISPLAY, menu_font)
+                        altheight = (c.SCREENHEIGHT / 2)
+                        puntuacion_temp = ""
+                        for opt in ranking:
+                            puntuacion_temp += str(opt)
+                            i = i + 1
+                            if (i / 3 == 1):
+                                puntuacion = game.menu.Option(puntuacion_temp, (c.SCREENWIDTH / 4, c.SCREENHEIGHT / 2),
+                                                              c.GAME_DISPLAY, menu_font)
+                                puntuacion.rect.center = (c.SCREENWIDTH / 2, altheight)
+                                altheight = altheight - 1.5 * alternativa.rect.height
+                                puntuacion.draw(c.GAME_DISPLAY, menu_font)
+                                options.append(puntuacion)
+                                puntuacion_temp = ""
+                            else:
+                                puntuacion_temp += ".........."
+                        op = game.menu.Option("Menu", (c.SCREENWIDTH / 4, c.SCREENHEIGHT / 2), c.GAME_DISPLAY,
+                                              menu_font)
+                        op.rect.center = (c.SCREENWIDTH / 2, altheight)
+                        altheight = altheight - 1.5 * opt.rect.height
+                        opt.draw(c.GAME_DISPLAY, menu_font)
+                        options.append(opt)
+
+                        if option.rect.collidepoint(pygame.mouse.get_pos()) and option.text == "Menu":
+                            c.STATE = "MENU"
+
         if (c.STATE == "EN_JUEGO"):
                 gamecf=gc.GameConfig()
                 c.IMAGES = gamecf.loadImages()
