@@ -2,7 +2,7 @@ import requests
 import json
 import game.gameconf as gc
 import game.ranking as gr
-
+import game.constants as c
 class ServiceLogin:
     def __init__(self):
             pass
@@ -72,11 +72,7 @@ class ServiceLogin:
         rank = gr.Ranking()
         rank.result=result
         if (result=='true'):
-            total = respuesta['total']
-            ranking = respuesta['ranking']
-            rank.total=total
-            rank.ranking=ranking
-            result=True
+            c.RANKING = respuesta['ranking']
+            c.RESULT_RANKING=True
         else:
-            result=False
-        return result
+            c.RESULT_RANKING=False
