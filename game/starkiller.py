@@ -60,6 +60,39 @@ class Enemy(pygame.sprite.Sprite):
             self.tick = self.tick_delay
         else:
             self.tick -= 1
+        self.tick -= 1
+
+class Asteroid(pygame.sprite.Sprite):
+    tick = 15
+    projectile_image = None
+
+    def __init__(self, img, asteroid_list, tick_delay):
+        pygame.sprite.Sprite.__init__(self)
+        self.image = img
+        self.rect = self.image.get_rect()
+        self.mask = pygame.mask.from_surface(self.image)
+        if (self.image == c.IMAGES["asteroid"]):
+            factoN = random.randint(0, 1)
+            self.rect.topleft = (150, -70)
+            self.speed_x = 0
+        else:
+            self.rect.topleft = (random.randint(500, 950), -70)
+            if self.rect.x < 210:
+                self.speed_x = random.randint(-1, 5)
+            elif self.rect.x < 315:
+                self.speed_x = random.randint(-3, 3)
+            elif self.rect.x < 420:
+                self.speed_x = random.randint(-5, -1)
+            else:
+                self.speed_x = random.randint(-5, 0)
+        self.asteroid_list = asteroid_list
+        self.speed_y = random.randint(3, 7)
+        self.tick_delay = tick_delay
+
+    def update(self):
+        self.rect.x += self.speed_x
+        self.rect.y += self.speed_y
+        self.tick -= 1
 
 class Missile(pygame.sprite.Sprite):
     speed_x = 0
@@ -121,6 +154,7 @@ class Game(object):
         self.enemy_list = pygame.sprite.Group()
         self.missile_list = pygame.sprite.Group()
         self.projectile_list = pygame.sprite.Group()
+        self.asteroid_list = pygame.sprite.Group()
         self.player_list.add(self.player)
         # ---------------------------------------------------------------
         self.font = pygame.font.Font(None, 20)  # text font...
@@ -153,6 +187,7 @@ class Game(object):
         self.enemy_list.update()
         self.missile_list.update()
         self.projectile_list.update()
+        self.asteroid_list.update()
         for missile in self.missile_list:
             if missile.rect.x < 0 or missile.rect.x > 950:
                 self.missile_list.remove(missile)

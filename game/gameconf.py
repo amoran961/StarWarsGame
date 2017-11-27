@@ -73,6 +73,7 @@ class GameConfig:
         images["explosion13"] = pygame.image.load("explosion13.png").convert_alpha()
         images["explosion14"] = pygame.image.load("explosion14.png").convert_alpha()
         images["explosion15"] = pygame.image.load("explosion15.png").convert_alpha()
+        images["asteroid"] = pygame.image.load("asteroid.png").convert_alpha()
         if (c.BANDO == "Rebeldes"):
             images["enemy1"] = pygame.image.load("enemy_imperial1.png").convert_alpha()
             images["enemy2"] = pygame.image.load("enemy_imperial2.png").convert_alpha()
