@@ -270,7 +270,7 @@ class Game(object):
             if len(hit_list) > 0:
                 self.explosion.add((enemy.rect.x + 20, enemy.rect.y + 20))
                 self.enemy_list.remove(enemy)
-                self.score += 1
+                self.score += 10
                 self.score_text = self.font.render("Score: " + str(self.score), True, (255, 255, 255))
         for asteroid in self.asteroid_list:
             hit_list = pygame.sprite.spritecollide(asteroid, self.missile_list, True)
@@ -279,7 +279,7 @@ class Game(object):
                 if (asteroid.life == 0):
                     self.explosion.add((asteroid.rect.x + 20, asteroid.rect.y + 20))
                     self.asteroid_list.remove(asteroid)
-                    self.score += 3
+                    self.score += 30
                     self.score_text = self.font.render("Score: " + str(self.score), True, (255, 255, 255))
         hit_list = pygame.sprite.spritecollide(self.player, self.enemy_list, False, pygame.sprite.collide_mask)
         if len(hit_list) > 0 and not self.terminate:
