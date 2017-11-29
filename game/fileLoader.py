@@ -23,10 +23,12 @@ def loadImages():
         images["enemy1"] = pygame.image.load("enemy_imperial1.png").convert_alpha()
         images["enemy2"] = pygame.image.load("enemy_imperial2.png").convert_alpha()
         images["enemy3"] = pygame.image.load("enemy_imperial3.png").convert_alpha()
+        images["cruiser"] = pygame.image.load("cruiser_imperial.png").convert_alpha()
     elif(c.BANDO=="Imperio"):
         images["enemy1"] = pygame.image.load("enemy_rebelde1.png").convert_alpha()
         images["enemy2"] = pygame.image.load("enemy_rebelde2.png").convert_alpha()
         images["enemy3"] = pygame.image.load("enemy_rebelde3.png").convert_alpha()
+        images["cruiser"] = pygame.image.load("cruiser_rebelde.png").convert_alpha()
     images["ocean"] = pygame.image.load("ocean_texture.png").convert()
     images["missile"] = pygame.image.load("missile.png").convert_alpha()
     images["projectile"] = pygame.image.load("projectile.png").convert()

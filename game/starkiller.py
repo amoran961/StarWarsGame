@@ -64,6 +64,43 @@ class Enemy(pygame.sprite.Sprite):
         if c.TIE_COUNTER < 3001:
             c.TIE_COUNTER += 1
 
+class Cruiser(pygame.sprite.Sprite):
+    tick = 15
+    projectile_image = None
+
+    def __init__(self, img, projectile_list, tick_delay):
+        pygame.sprite.Sprite.__init__(self)
+        self.image = img
+        self.rect = self.image.get.rect()
+        self.mask = pygame.mask.from_surface(self.image)
+        i=0
+        if (c.TIE_COUNTER > 3100):
+            i += 1
+            if (i%2==0):
+                self.rect.topleft = (-81, -300)
+            else:
+                self.rect.topleft = (869, -300)
+            self.projectile_list = projectile_list
+            self.speed_x = 0
+            self.speed_y = 3
+            self.tick_delay = tick_delay
+
+    def update(self):
+        self.rect.y += self.speed_y
+        self.rect.x += self.speed_x
+        if self.tick == 0:
+            projectile = Projectile(self.rect.center, self.projectile_image)
+            if self.rect.x == -81:
+                projectile.speed_x = 10
+            elif self.rect.x == 869:
+                projectile.speed_x = -10
+            projectile.speed_y = self.speed_y
+            self.projectile_list.add(projectile)
+            self.tick = self.tick_delay
+        else:
+            self.tick -= 1
+        if c.TIE_COUNTER > 3100:
+            c.TIE_COUNTER += 1
 
 class Asteroid(pygame.sprite.Sprite):
     tick = 15
@@ -161,6 +198,7 @@ class Game(object):
         self.missile_list = pygame.sprite.Group()
         self.projectile_list = pygame.sprite.Group()
         self.asteroid_list = pygame.sprite.Group()
+        self.cruiser_list = pygame.sprite.Group()
         self.player_list.add(self.player)
         # ---------------------------------------------------------------
         self.font = pygame.font.Font(None, 20)  # text font...
@@ -176,6 +214,7 @@ class Game(object):
         self.terminate_count_down = 150
         self.terminate = False
         self.score = 0
+        c.TIE_COUNTER = 0
         if len(self.enemy_list) > 0:
             self.enemy_list.empty()
         if len(self.missile_list) > 0:
@@ -184,6 +223,8 @@ class Game(object):
             self.projectile_list.empty()
         if len(self.asteroid_list) > 0:
             self.asteroid_list.empty()
+        if len(self.cruiser_list) > 0:
+            self.cruiser_list.empty()
         self.tick_delay = 35
         c.LIVES = 4
         self.score_text = self.font.render("Score: 0", True, (255, 255, 255))
@@ -201,6 +242,9 @@ class Game(object):
         self.missile_list.update()
         if c.TIE_COUNTER > 3000:
             self.asteroid_list.update()
+        if c.TIE_COUNTER > 3100:
+            self.cruiser_list.update()
+            self.projectile_list.update()
         for missile in self.missile_list:
             if missile.rect.x < 0 or missile.rect.x > 950:
                 self.missile_list.remove(missile)
@@ -221,6 +265,9 @@ class Game(object):
                 self.asteroid_list.remove(asteroid)
             elif asteroid.rect.y < - 100 or asteroid.rect.y > 700:
                 self.asteroid_list.remove(asteroid)
+        for cruiser in self.cruiser_list:
+            if cruiser.rect.y < -1000 or cruiser.rect.y > 700:
+                self.cruiser_list.remove(cruiser)
         for enemy in self.enemy_list:
             hit_list = pygame.sprite.spritecollide(enemy, self.missile_list, True)
             if len(hit_list) > 0:
@@ -246,6 +293,11 @@ class Game(object):
                 self.explosion.add(enemy.rect.topleft)
                 self.enemy_list.remove(enemy)
         hit_list = pygame.sprite.spritecollide(self.player, self.asteroid_list, False, pygame.sprite.collide_mask)
+        if len(hit_list) > 0 and not self.terminate:
+            self.terminate = True
+            self.explosion.add(self.player.rect.topleft)
+            c.SOUNDS["plane"].stop()
+        hit_list = pygame.sprite.spritecollide(self.player, self.cruiser_list, False, pygame.sprite.collide_mask)
         if len(hit_list) > 0 and not self.terminate:
             self.terminate = True
             self.explosion.add(self.player.rect.topleft)
@@ -279,6 +331,11 @@ class Game(object):
                 self.asteroid_list.add(asteroid)
                 self.asteroid_list.add(asteroid2)
 
+            if c.TIE_COUNTER >= 3100:
+                cruiser = Cruiser(c.IMAGES["cruiser"], self.cruiser_list, self.tick_delay)
+                cruiser.projectile_image = c.IMAGES["projectile"]
+                self.cruiser_list.add(cruiser)
+
             self.tick = self.tick_delay
         else:
             self.tick -= 1
@@ -299,6 +356,7 @@ class Game(object):
             self.enemy_list.draw(screen)
             self.projectile_list.draw(screen)
             self.asteroid_list.draw(screen)
+            self.cruiser_list.draw(screen)
             if not self.terminate:
                 self.player_list.draw(screen)
             screen.blit(self.score_text, (75, 20))
@@ -312,6 +370,7 @@ class Game(object):
             self.projectile_list.draw(screen)
             self.enemy_list.draw(screen)
             self.asteroid_list.draw(screen)
+            self.cruiser_list.draw(screen)
             if not self.terminate:
                 self.player_list.draw(screen)
             screen.blit(self.score_text, (75, 20))
