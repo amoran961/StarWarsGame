@@ -2,8 +2,7 @@ import pygame, random
 from game.fileLoader import *
 import game.constants as c
 import services.Service
-
-
+from operator import*
 class Explosion(object):
     def __init__(self):
         self.explosion_list = []
@@ -71,36 +70,28 @@ class Cruiser(pygame.sprite.Sprite):
     def __init__(self, img, projectile_list, tick_delay):
         pygame.sprite.Sprite.__init__(self)
         self.image = img
-        self.rect = self.image.get.rect()
+        self.rect = self.image.get_rect()
         self.mask = pygame.mask.from_surface(self.image)
         i=0
-        if (c.TIE_COUNTER > 3100):
-            i += 1
-            if (i%2==0):
-                self.rect.topleft = (-81, -300)
-            else:
-                self.rect.topleft = (869, -300)
-            self.projectile_list = projectile_list
+        if c.ASTEROID_COUNTER > 1000:
+            self.rect.topleft = (70, -70)
             self.speed_x = 0
-            self.speed_y = 3
+            self.speed_y = 2
             self.tick_delay = tick_delay
-
+            self.projectile_list = projectile_list
+            c.CRUISER_NUMBER+=1
     def update(self):
         self.rect.y += self.speed_y
-        self.rect.x += self.speed_x
         if self.tick == 0:
             projectile = Projectile(self.rect.center, self.projectile_image)
-            if self.rect.x == -81:
-                projectile.speed_x = 10
-            elif self.rect.x == 869:
-                projectile.speed_x = -10
+            projectile.speed_x = 10
             projectile.speed_y = self.speed_y
             self.projectile_list.add(projectile)
             self.tick = self.tick_delay
         else:
             self.tick -= 1
-        if c.TIE_COUNTER > 3100:
-            c.TIE_COUNTER += 1
+        if c.CRUISER_COUNTER < 3100:
+            c.CRUISER_COUNTER += 1
 
 class Asteroid(pygame.sprite.Sprite):
     tick = 15
@@ -131,7 +122,8 @@ class Asteroid(pygame.sprite.Sprite):
         self.rect.x += self.speed_x
         self.rect.y += self.speed_y
         self.tick = self.tick_delay
-
+        if c.ASTEROID_COUNTER < 1001:
+            c.ASTEROID_COUNTER += 1
 
 class Missile(pygame.sprite.Sprite):
     speed_x = 0
@@ -215,6 +207,10 @@ class Game(object):
         self.terminate = False
         self.score = 0
         c.TIE_COUNTER = 0
+        c.ASTEROID_COUNTER=0
+        c.CRUISER_COUNTER=0
+        c.CRUISER_NUMBER=0
+
         if len(self.enemy_list) > 0:
             self.enemy_list.empty()
         if len(self.missile_list) > 0:
@@ -242,9 +238,10 @@ class Game(object):
         self.missile_list.update()
         if c.TIE_COUNTER > 3000:
             self.asteroid_list.update()
-        if c.TIE_COUNTER > 3100:
+        if c.ASTEROID_COUNTER>1000:
             self.cruiser_list.update()
             self.projectile_list.update()
+
         for missile in self.missile_list:
             if missile.rect.x < 0 or missile.rect.x > 950:
                 self.missile_list.remove(missile)
@@ -317,13 +314,13 @@ class Game(object):
             self.life_text = self.font.render("Shield: " + str(c.LIVES), True, (255, 255, 255))
 
         if self.tick == 0:
-            if c.TIE_COUNTER <= 2990:
+            if c.TIE_COUNTER <= 2900:
                 enemy = Enemy(random.choice((c.IMAGES["enemy1"], c.IMAGES["enemy2"], c.IMAGES["enemy3"])),
                               self.projectile_list, self.tick_delay)
                 enemy.projectile_image = c.IMAGES["projectile"]
                 self.enemy_list.add(enemy)
 
-            if c.TIE_COUNTER >= 3001:
+            if c.TIE_COUNTER >= 3001 and c.ASTEROID_COUNTER <1000:
                 asteroid = Asteroid(random.choice((c.IMAGES["asteroid"], c.IMAGES["asteroid2"])), self.asteroid_list,
                                     self.tick_delay)
                 asteroid2 = Asteroid(random.choice((c.IMAGES["asteroid"], c.IMAGES["asteroid2"])), self.asteroid_list,
@@ -331,11 +328,13 @@ class Game(object):
                 self.asteroid_list.add(asteroid)
                 self.asteroid_list.add(asteroid2)
 
-            if c.TIE_COUNTER >= 3100:
-                cruiser = Cruiser(c.IMAGES["cruiser"], self.cruiser_list, self.tick_delay)
-                cruiser.projectile_image = c.IMAGES["projectile"]
-                self.cruiser_list.add(cruiser)
-
+            if c.ASTEROID_COUNTER >=1001 :
+                if mod(c.CRUISER_NUMBER,4) == 0 :
+                    cruiser = Cruiser(c.IMAGES["cruiser"], self.cruiser_list, self.tick_delay)
+                    cruiser.projectile_image = c.IMAGES["projectile"]
+                    self.cruiser_list.add(cruiser)
+                else:
+                    c.CRUISER_NUMBER+=1
             self.tick = self.tick_delay
         else:
             self.tick -= 1
