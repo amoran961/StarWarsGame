@@ -173,6 +173,9 @@ def game_menu(clock):
                     pygame.display.flip()
                     # --- Limit to 30 frames per second
                     clock.tick(30)
+        elif(c.STATE == "PRUEBA"):
+            retorno = "Prueba existosa"
+            return retorno
         for option in options:
             if option.rect.collidepoint(pygame.mouse.get_pos()):
                 option.hovered = True
